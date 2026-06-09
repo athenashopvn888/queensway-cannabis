@@ -128,7 +128,7 @@ export default function PostContent() {
 
         <div className={styles.cta}>
           <p>
-            <strong>Queensway Cannabis Dispensary</strong> — 1174 The Queensway, Etobicoke · Open 24 Hours · (437) 331-9109
+            <strong>Queensway Cannabis Dispensary</strong> — 1174 The Queensway, Etobicoke · Open Daily: 10:00 AM - 12:00 AM · (437) 331-9109
           </p>
           <Link href="/exotic" className={styles.ctaBtn}>Browse Our Menu</Link>
         </div>

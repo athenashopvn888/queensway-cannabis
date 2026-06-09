@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Queensway Cannabis Dispensary",
   },
   description:
-    "Shop 200+ premium cannabis strains at Queensway Cannabis Dispensary. Exotic, Premium, AAA+, AA & Budget flower from $3/g. Etobicoke's uplifting dispensary at 1174 The Queensway. Open 24 Hours.",
+    "Shop 200+ premium cannabis strains at Queensway Cannabis Dispensary. Exotic, Premium, AAA+, AA & Budget flower from $3/g. Etobicoke's uplifting dispensary at 1174 The Queensway. Open Daily: 10:00 AM - 12:00 AM.",
   keywords: [
     "cannabis dispensary Etobicoke",
     "weed store Etobicoke",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Queensway Cannabis Dispensary",
     title: "Queensway Cannabis Dispensary — Premium Etobicoke Cannabis Dispensary",
     description:
-      "200+ strains from $3/g. Exotic to Budget. Etobicoke's uplifting dispensary at 1174 The Queensway. Open 24 Hours.",
+      "200+ strains from $3/g. Exotic to Budget. Etobicoke's uplifting dispensary at 1174 The Queensway. Open Daily: 10:00 AM - 12:00 AM.",
     images: [
       {
         url: "https://queenswaycannabisdispensary.com/wp-content/uploads/2026/04/46Oi5.jpg",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Queensway Cannabis Dispensary — Etobicoke's Uplifting Dispensary",
-    description: "200+ strains from $3/g. Open 24 Hours at 1174 The Queensway, Etobicoke.",
+    description: "200+ strains from $3/g. Open Daily: 10:00 AM - 12:00 AM at 1174 The Queensway, Etobicoke.",
     images: ["https://queenswaycannabisdispensary.com/wp-content/uploads/2026/04/46Oi5.jpg"],
   },
   robots: {
@@ -75,7 +75,7 @@ const jsonLd = {
   additionalType: "https://schema.org/Store",
   "@id": "https://queenswaycannabisdispensary.com",
   name: "Queensway Cannabis Dispensary",
-  description: "Cannabis dispensary at 1174 The Queensway in Etobicoke, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open 24 Hours.",
+  description: "Cannabis dispensary at 1174 The Queensway in Etobicoke, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open Daily: 10:00 AM - 12:00 AM.",
   url: "https://queenswaycannabisdispensary.com",
   telephone: "+14373319109",
   image: "https://queenswaycannabisdispensary.com/wp-content/uploads/2026/04/7Clmh.jpg",
@@ -94,13 +94,21 @@ const jsonLd = {
     longitude: -79.5217307,
   },
   openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      opens: "00:00",
-      closes: "23:59",
-    },
-  ],
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "10:00",
+    "closes": "00:00"
+  }
+],
   sameAs: [
     "https://queenswaycannabisdispensary.com/",
     "https://queenswaycannabisdispensary.com/",

@@ -70,7 +70,7 @@ const EXPLORE_CATEGORIES = [
 const LOCAL_FAQS = [
   {
     q: "What are the hours for Queensway Cannabis Dispensary?",
-    a: "Queensway Cannabis Dispensary at 1174 The Queensway, Etobicoke is Open 24 Hours a day, 7 days a week. Walk in anytime — no appointment needed.",
+    a: "Queensway Cannabis Dispensary at 1174 The Queensway, Etobicoke is open daily from 10:00 AM to 12:00 AM. Walk in anytime — no appointment needed.",
   },
   {
     q: "What cannabis products do you carry?",
@@ -218,7 +218,7 @@ export default function HomePage() {
             <img src="/storeFavicon.webp" alt="Queensway Cannabis Dispensary Icon" style={{ height: "60px", width: "60px", objectFit: "contain", borderRadius: "8px", marginBottom: "8px" }} />
             <h1 className={styles.brandTitle}>QUEENSWAY CANNABIS DISPENSARY</h1>
             <p className={styles.brandSub}>Premium Cannabis Dispensary</p>
-            <div className={styles.brandBadge}>Open 24 Hours</div>
+            <div className={styles.brandBadge}>Open Daily: 10:00 AM - 12:00 AM</div>
           </div>
 
           {/* Bento Grid */}
@@ -301,15 +301,15 @@ export default function HomePage() {
       <section className={styles.seoSection}>
         <div className={styles.container}>
           <div className={styles.seoPanel}>
-            <h2 className={styles.seoPanelTitle}>1174 The Queensway & Nearby Expressway's Premier Cannabis Dispensary — Open 24 Hours</h2>
+            <h2 className={styles.seoPanelTitle}>1174 The Queensway & Nearby Expressway's Premier Cannabis Dispensary — Open Daily: 10:00 AM - 12:00 AM</h2>
             <p className={styles.seoPanelText}>
-              Welcome to <strong>Queensway Cannabis Dispensary</strong>, Etobicoke's premier 24-hour cannabis destination at 1174 The Queensway. We carry an electrifying selection of top-shelf strains around the clock — from ultra-rare exotics to solid everyday budget picks.
+              Welcome to <strong>Queensway Cannabis Dispensary</strong>, Etobicoke's premier cannabis destination at 1174 The Queensway. We carry an electrifying selection of top-shelf strains — from ultra-rare exotics to solid everyday budget picks.
             </p>
             <p className={styles.seoPanelText}>
-              Open 24 hours, 7 days a week — Queensway Cannabis Dispensary never closes. Our live menu is constantly refreshed with the freshest drops, premium prerolls, artisan edibles, and everything in between. Whether you're winding down after a late shift or stocking up for the weekend, our knowledgeable staff is always here for you.
+              We are open Open Daily: 10:00 AM - 12:00 AM — Queensway Cannabis Dispensary is here to serve you. Our live menu is constantly refreshed with the freshest drops, premium prerolls, artisan edibles, and everything in between. Whether you're winding down or stocking up for the weekend, our knowledgeable staff is always here for you.
             </p>
             <p className={styles.seoPanelText}>
-              Searching for a cannabis dispensary in Etobicoke or the surrounding area? Queensway Cannabis Dispensary is your 24-hour destination for premium flower, potent prerolls, and artisan edibles. Our six-tier pricing system means quality cannabis at every budget level — starting from just $3/g.
+              Searching for a cannabis dispensary in Etobicoke or the surrounding area? Queensway Cannabis Dispensary is your go-to destination for premium flower, potent prerolls, and artisan edibles. Our six-tier pricing system means quality cannabis at every budget level — starting from just $3/g.
             </p>
           </div>
         </div>
