@@ -101,7 +101,7 @@ export default function DeliveryContent() {
         <div className={styles.ctaSection}>
           <p className={styles.ctaText}>
             Can&apos;t wait? Visit us in-store at <strong>1174 The Queensway, Etobicoke</strong> —
-            open <strong>24 hours</strong>. Call <strong>(437) 331-9109</strong>.
+            we are <strong>Open Daily: 10:00 AM - 12:00 AM</strong>. Call <strong>(437) 331-9109</strong>.
           </p>
         </div>
       </div>

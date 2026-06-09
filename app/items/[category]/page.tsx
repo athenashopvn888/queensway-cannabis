@@ -128,7 +128,7 @@ export default async function ItemsCategoryPage({
           <div className={styles.visitCta}>
             <h3 className={styles.visitTitle}>Visit Queensway Cannabis Dispensary</h3>
             <p className={styles.visitText}>
-              1174 The Queensway, Etobicoke, ON M8Z 1R5 · Open 24 Hours
+              1174 The Queensway, Etobicoke, ON M8Z 1R5 · Open Daily: 10:00 AM - 12:00 AM
             </p>
             <a
               href="https://queenswaycannabisdispensary.com/"

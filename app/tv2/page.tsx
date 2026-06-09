@@ -136,7 +136,7 @@ function ItemCard({ title, accent, items, hiIdx, preset }: {
 const TICKER_SLIDES = [
   "🔥 Queensway Cannabis Dispensary — 1174 The Queensway, Etobicoke",
   "200+ Strains In Stock",
-  "Open 24 Hours",
+  "Open Daily: 10:00 AM - 12:00 AM",
   "Pre-Rolls · Edibles · Vapes · Concentrates",
   "ALL SALES ARE FINAL",
   "🎮 Play Games at queenswaycannabisdispensary.com/games",
