@@ -74,6 +74,7 @@ export default function Footer() {
               <Link href="/info/cheap-weed-york">Cheap Weed Etobicoke</Link>
               <Link href="/info/native-cigarettes-york">Native Cigarettes</Link>
               <Link href="/info/weed-store-near-mississauga">Weed Store Near Mississauga</Link>
+              <Link href="/weed-dispensary-etobicoke/">Queensway Cannabis Dispensary Weed Dispensary in Etobicoke</Link>
               <Link href="/contact">Contact Us</Link>
               <a
                 href="https://queenswaycannabisdispensary.com/"
