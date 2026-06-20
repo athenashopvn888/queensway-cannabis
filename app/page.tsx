@@ -306,7 +306,7 @@ export default function HomePage() {
               Welcome to <strong>Queensway Cannabis Dispensary</strong>, Etobicoke's premier cannabis destination at 1174 The Queensway. We carry an electrifying selection of top-shelf strains — from ultra-rare exotics to solid everyday budget picks.
             </p>
             <p className={styles.seoPanelText}>
-              We are open Open Daily: 10:00 AM - 12:00 AM — Queensway Cannabis Dispensary is here to serve you. Our live menu is constantly refreshed with the freshest drops, premium prerolls, artisan edibles, and everything in between. Whether you're winding down or stocking up for the weekend, our knowledgeable staff is always here for you.
+              We are open Open Daily: 10:00 AM - 12:00 AM — Queensway Cannabis Dispensary is here to serve you. Our live menu is constantly refreshed with the freshest drops, premium prerolls, artisan edibles, and everything in between. Whether you're winding down or stocking up for the weekend, our knowledgeable staff can help during listed store hours.
             </p>
             <p className={styles.seoPanelText}>
               Searching for a cannabis dispensary in Etobicoke or the surrounding area? Queensway Cannabis Dispensary is your go-to destination for premium flower, potent prerolls, and artisan edibles. Our six-tier pricing system means quality cannabis at every budget level — starting from just $3/g.
@@ -367,14 +367,6 @@ export default function HomePage() {
           </div>
 
           <div className={styles.reviewCtaRow}>
-            <a
-              href="https://queenswaycannabisdispensary.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.reviewsWrite}
-            >
-              ✍ Write a Google Review
-            </a>
           </div>
         </div>
       </section>
@@ -406,14 +398,6 @@ export default function HomePage() {
                 <br />
                 Etobicoke, ON M8Z 1R5
                 <br />
-                <a
-                  href="https://queenswaycannabisdispensary.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.storeLink}
-                >
-                  Get Directions →
-                </a>
               </p>
             </div>
             <div className={styles.storeCard}>
@@ -438,16 +422,6 @@ export default function HomePage() {
 
           {/* Map wrapper */}
           <div className={styles.mapWrap}>
-            <iframe
-              src="https://maps.google.com/maps?q=1174%20The%20Queensway,+Etobicoke,+ON+M8Z%201R5&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="350"
-              style={{ border: 0, display: "block" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Queensway Cannabis Dispensary — 1174 The Queensway, Etobicoke"
-            ></iframe>
           </div>
         </div>
       </section>

@@ -44,14 +44,6 @@ export default function ContactPage() {
                 <br />
                 <span className={styles.infoMuted}>1174 The Queensway & Nearby Expressway</span>
               </p>
-              <a
-                href="https://queenswaycannabisdispensary.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.infoBtn}
-              >
-                Get Directions →
-              </a>
             </div>
 
             {/* Hours */}
@@ -107,16 +99,6 @@ export default function ContactPage() {
 
           {/* Map */}
           <div className={styles.mapSection}>
-            <iframe
-              src="https://maps.google.com/maps?q=1174%20The%20Queensway,+Etobicoke,+ON+M8Z%201R5&t=&z=15&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Queensway Cannabis Dispensary — 1174 The Queensway, Etobicoke"
-            ></iframe>
           </div>
         </div>
       </section>

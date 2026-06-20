@@ -130,14 +130,6 @@ export default async function ItemsCategoryPage({
             <p className={styles.visitText}>
               1174 The Queensway, Etobicoke, ON M8Z 1R5 · Open Daily: 10:00 AM - 12:00 AM
             </p>
-            <a
-              href="https://queenswaycannabisdispensary.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.visitBtn}
-            >
-              📍 Get Directions
-            </a>
           </div>
         </div>
       </section>

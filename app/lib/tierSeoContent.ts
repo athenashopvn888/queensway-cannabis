@@ -98,7 +98,7 @@ export const TIER_SEO: Record<string, TierSeoData> = {
 
   BUDGET: {
     seoTitle: "Budget Cannabis Etobicoke — Cheap Weed From $3/g",
-    seoIntro: "Cheap weed in Etobicoke starting at $3/g. Queensway Cannabis Dispensary Budget tier features shreds and value ounces for cost-conscious smokers. Open daily on Etobicoke St.",
+    seoIntro: "Cheap weed in Etobicoke starting at $3/g. Queensway Cannabis Dispensary Budget tier features shreds and value ounces for cost-conscious smokers. Check current store hours before visiting Queensway Cannabis Dispensary.",
     sections: [
       {
         heading: "Affordable Cannabis Without Compromise",

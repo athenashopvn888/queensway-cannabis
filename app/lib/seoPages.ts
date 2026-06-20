@@ -32,7 +32,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Beyond Flower — Edibles, Vapes, Concentrates & More",
-        body: "Queensway Cannabis Dispensary is more than just a flower shop. We carry a comprehensive selection of cannabis edibles (gummies, chocolates, baked goods), vape pens and disposable vapes, concentrates (shatter, wax, hash, diamonds, live resin), pre-rolled joints, magic mushrooms, native cigarettes, rolling papers, and accessories. Our live digital menu at queenswaycannabisdispensary.com updates in real time so you always know exactly what's in stock before you make the trip.",
+        body: "Queensway Cannabis Dispensary is more than just a flower shop. We carry a comprehensive selection of cannabis edibles (gummies, chocolates, baked goods), vape pens and disposable vapes, concentrates (shatter, wax, hash, diamonds, live resin), pre-rolled joints, native cigarettes, rolling papers, and accessories. Our live digital menu at queenswaycannabisdispensary.com updates in real time so you always know exactly what's in stock before you make the trip.",
       },
       {
         heading: "Open Daily: 10:00 AM - 12:00 AM on 1174 The Queensway & Nearby Expressway",
@@ -50,7 +50,7 @@ export const SEO_PAGES: SeoPageData[] = [
     faqs: [
       { q: "Where is Queensway Cannabis Dispensary located?", a: "We are located at 1174 The Queensway, Etobicoke, ON M8Z 1R5 — in the heart of 1174 The Queensway & Nearby Expressway area — one of Etobicoke's most accessible areas. We're near major transit bus routes and close to major highways." },
       { q: "What are the hours for Queensway Cannabis Dispensary?", a: "We are open daily from 10:00 AM to 12:00 AM. Walk in anytime — no appointment needed. Whether it's day or night, our staff is here to help." },
-      { q: "What cannabis products does Queensway Cannabis Dispensary carry?", a: "We carry 200+ strains of cannabis flower across 5 quality tiers (Exotic, Premium, AAA+, AA, Budget), plus edibles, vapes, concentrates, pre-rolls, magic mushrooms, native cigarettes, and accessories. Our menu updates in real time online." },
+      { q: "What cannabis products does Queensway Cannabis Dispensary carry?", a: "We carry 200+ strains of cannabis flower across 5 quality tiers (Exotic, Premium, AAA+, AA, Budget), plus edibles, vapes, concentrates, pre-rolls, native cigarettes, and accessories. Our menu updates in real time online." },
       { q: "What is the cheapest weed at Queensway Cannabis Dispensary?", a: "Our Budget tier starts at $3/g with value ounces from $40. Our AA tier is $4/g. Every tier includes our Buy 2g Get 1g FREE promotion, making our prices even more competitive." },
       { q: "Does Queensway Cannabis Dispensary have a live menu?", a: "Yes! Our online menu at queenswaycannabisdispensary.com updates in real time with current stock, prices, and availability. You can see exactly what we have before you visit." },
       { q: "What makes Queensway Cannabis Dispensary different from other Etobicoke dispensaries?", a: "Three things set us apart: (1) we are open daily from 10:00 AM to 12:00 AM, (2) our transparent 5-tier pricing system means no confusing markups, and (3) every purchase includes our Buy 2g Get 1g FREE promotion. Plus we carry one of Etobicoke's largest selections with over 200 strains." },
@@ -158,7 +158,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Full Menu — Cannabis, Edibles, Vapes & More",
-        body: "When you make the trip up to Etobicoke, make it count. Queensway Cannabis Dispensary carries a full selection including 200+ flower strains, edibles, vape pens, disposable vapes, concentrates (shatter, wax, hash, live resin), pre-rolled joints, magic mushrooms, native cigarettes, and accessories. Check our live online menu at queenswaycannabisdispensary.com before you visit to see exactly what's in stock.",
+        body: "When you make the trip up to Etobicoke, make it count. Queensway Cannabis Dispensary carries a full selection including 200+ flower strains, edibles, vape pens, disposable vapes, concentrates (shatter, wax, hash, live resin), pre-rolled joints, native cigarettes, and accessories. Check our live online menu at queenswaycannabisdispensary.com before you visit to see exactly what's in stock.",
       },
     ],
     faqs: [

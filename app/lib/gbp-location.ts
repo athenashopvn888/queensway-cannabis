@@ -24,8 +24,8 @@ export const gbpLocation = {
     "Accessories"
   ],
   menuUrl: "/",
-  directionsUrl: "https://www.google.com/maps/search/?api=1&query=1174%20The%20Queensway%2C%20Etobicoke%2C%20ON%20M8Z%201R5",
-  mapEmbedUrl: "https://maps.google.com/maps?q=Queensway%20Cannabis%20Dispensary%201174%20The%20Queensway%2C%20Etobicoke%2C%20ON%20M8Z%201R5&t=&z=15&ie=UTF8&iwloc=&output=embed",
+  directionsUrl: "",
+  mapEmbedUrl: "",
   latitude: "43.6223417",
   longitude: "-79.5217307",
   hours: ["Open Daily: 10:00 AM - 12:00 AM"],
