@@ -39,8 +39,8 @@ export const SEO_PAGES: SeoPageData[] = [
         body: "At Queensway Cannabis Dispensary, we make it convenient for you. We are Open Daily: 10:00 AM - 12:00 AM, 365 days a year. Whether you're finishing a late shift, heading out for the night, or need an early morning pickup, we are ready to serve you. We're centrally located at 1174 The Queensway, near major transit bus routes, close to major highways and central stations. Free street parking is available near the dispensary.",
       },
       {
-        heading: "Unbeatable Promotions on Every Purchase",
-        body: "Every purchase at Queensway Cannabis Dispensary comes with our signature promotions. Our Buy 2g Get 1g FREE deal applies to every single tier — you always get a bonus gram. Our top three tiers (Exotic, Premium, and AAA+) also qualify for Buy 3g Get 3g FREE, effectively doubling your order. Combined with our already competitive pricing, Queensway Cannabis Dispensary offers some of the best cannabis value in Etobicoke, Toronto, and the surrounding area.",
+        heading: "Clear Bundle Pricing on Flower",
+        body: "Every purchase at Queensway Cannabis Dispensary comes with our bundle offers. Our 3g bundle offer applies to every single tier — the 3g total is shown clearly before purchase. Our top three tiers (Exotic, Premium, and AAA+) also qualify for 6g bundle pricing for 6g total. Combined with our already competitive pricing, Queensway Cannabis Dispensary offers some of the best cannabis value in Etobicoke, Toronto, and the surrounding area.",
       },
       {
         heading: "Serving Etobicoke, Toronto & Mississauga",
@@ -51,9 +51,9 @@ export const SEO_PAGES: SeoPageData[] = [
       { q: "Where is Queensway Cannabis Dispensary located?", a: "We are located at 1174 The Queensway, Etobicoke, ON M8Z 1R5 — in the heart of 1174 The Queensway & Nearby Expressway area — one of Etobicoke's most accessible areas. We're near major transit bus routes and close to major highways." },
       { q: "What are the hours for Queensway Cannabis Dispensary?", a: "We are open daily from 10:00 AM to 12:00 AM. Walk in anytime — no appointment needed. Whether it's day or night, our staff is here to help." },
       { q: "What cannabis products does Queensway Cannabis Dispensary carry?", a: "We carry 200+ strains of cannabis flower across 5 quality tiers (Exotic, Premium, AAA+, AA, Budget), plus edibles, vapes, concentrates, pre-rolls, native cigarettes, and accessories. Our menu updates in real time online." },
-      { q: "What is the cheapest weed at Queensway Cannabis Dispensary?", a: "Our Budget tier starts at $3/g with value ounces from $40. Our AA tier is $4/g. Every tier includes our Buy 2g Get 1g FREE promotion, making our prices even more competitive." },
+      { q: "What is the cheapest weed at Queensway Cannabis Dispensary?", a: "Our Budget tier starts at $3/g with value ounces from $40. Our AA tier is $4/g. Every tier includes our 3g bundle pricing, making our prices even more competitive." },
       { q: "Does Queensway Cannabis Dispensary have a live menu?", a: "Yes! Our online menu at queenswaycannabisdispensary.com updates in real time with current stock, prices, and availability. You can see exactly what we have before you visit." },
-      { q: "What makes Queensway Cannabis Dispensary different from other Etobicoke dispensaries?", a: "Three things set us apart: (1) we are open daily from 10:00 AM to 12:00 AM, (2) our transparent 5-tier pricing system means no confusing markups, and (3) every purchase includes our Buy 2g Get 1g FREE promotion. Plus we carry one of Etobicoke's largest selections with over 200 strains." },
+      { q: "What makes Queensway Cannabis Dispensary different from other Etobicoke dispensaries?", a: "Three things set us apart: (1) we are open daily from 10:00 AM to 12:00 AM, (2) our transparent 5-tier pricing system means no confusing markups, and (3) every purchase includes our 3g bundle pricing. Plus we carry one of Etobicoke's largest selections with over 200 strains." },
       { q: "Can I check stock before visiting?", a: "Absolutely. Visit queenswaycannabisdispensary.com to see our live menu. All flower, edibles, vapes, and accessories are listed with real-time stock status, THC levels, and pricing." },
       { q: "Is there parking near Queensway Cannabis Dispensary?", a: "Yes. Free street parking is available nearby and surrounding residential streets. We're also easily accessible via local transit." },
     ],
@@ -62,7 +62,7 @@ export const SEO_PAGES: SeoPageData[] = [
   {
     slug: "cheap-weed-york",
     title: "Cheap Weed Etobicoke — Budget Cannabis Deals From $3/g | Queensway Cannabis Dispensary",
-    metaDescription: "Looking for cheap weed in Etobicoke? Queensway Cannabis Dispensary has budget flower from $3/g, ounces from $40, and Buy 2g Get 1g FREE promos. We are Open Daily: 10:00 AM - 12:00 AM at 1174 The Queensway.",
+    metaDescription: "Looking for cheap weed in Etobicoke? Queensway Cannabis Dispensary has budget flower from $3/g, ounces from $40, and 3g bundle pricing. We are Open Daily: 10:00 AM - 12:00 AM at 1174 The Queensway.",
     h1: "Cheap Weed Etobicoke — Budget Cannabis Deals",
     icon: "💰",
     heroTagline: "Budget Flower From $3/g · Ounces From $40 · Open Daily: 10:00 AM - 12:00 AM",
@@ -73,8 +73,8 @@ export const SEO_PAGES: SeoPageData[] = [
         body: "Looking for cheap weed in Etobicoke without sacrificing quality? Queensway Cannabis Dispensary offers some of the most competitive cannabis prices in the city. Our Budget tier starts at just $3/g with value ounces from $40. Our AA tier ($4/g) and AAA+ tier ($5-$6/g) also deliver incredible value with THC levels from 27% to 32%. We believe great cannabis shouldn't break the bank, and our transparent tier-based pricing ensures you always get exactly what you pay for — no hidden markups, no gimmicks.",
       },
       {
-        heading: "Unbeatable Promotions That Stack",
-        body: "Every tier at Queensway Cannabis Dispensary comes with our signature Buy 2g Get 1g FREE promotion — meaning you always get a free gram with every purchase. Our top three tiers (Exotic, Premium, AAA+) also offer Buy 3g Get 3g FREE, effectively doubling your order. When you combine our already low prices with these promos, Queensway Cannabis Dispensary delivers the best cannabis value in Etobicoke. A $15 AAA+ 3g purchase actually gets you 3g of flower — that's just $5/g for THC 30%+ cannabis.",
+        heading: "Flower Bundle Pricing",
+        body: "Every tier at Queensway Cannabis Dispensary comes with our signature 3g bundle pricing — so the total grams and price are shown before purchase. Our top three tiers (Exotic, Premium, AAA+) also offer 6g bundle pricing for 6g total. When you combine our already low prices with these bundle offers, Queensway Cannabis Dispensary delivers the best cannabis value in Etobicoke. A $15 AAA+ 3g purchase actually gets you 3g of flower — that's just $5/g for THC 30%+ cannabis.",
       },
       {
         heading: "Budget Doesn't Mean Low Quality",
@@ -82,15 +82,15 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Compare Our Prices",
-        body: "Budget: $3/g — $40/oz. AA: $4/g — $90/oz. AAA+: $5-$6/g — $100/oz. Premium: $7-$10/g. Exotic: $10-$12/g. Every tier includes Buy 2g Get 1g FREE. Top tiers include Buy 3g Get 3g FREE. These are some of the lowest prices you'll find at any dispensary in Etobicoke, 1174 The Queensway & Nearby Expressway and surrounding areas.",
+        body: "Budget: $3/g — $40/oz. AA: $4/g — $90/oz. AAA+: $5-$6/g — $100/oz. Premium: $7-$10/g. Exotic: $10-$12/g. Every tier includes 3g bundle pricing. Top tiers include 6g bundle pricing. These are some of the lowest prices you'll find at any dispensary in Etobicoke, 1174 The Queensway & Nearby Expressway and surrounding areas.",
       },
     ],
     faqs: [
       { q: "What is the cheapest weed at Queensway Cannabis Dispensary?", a: "Our Budget tier starts at $3/g with value ounces from $40. These are quality, properly-cured strains at Etobicoke's most competitive prices." },
-      { q: "Do you have ounce deals?", a: "Yes! Budget ounces from $40, AA ounces from $90, AAA+ ounces from $100. All with excellent quality, freshness guaranteed, and Buy 2g Get 1g FREE promotions on top." },
+      { q: "Do you have ounce deals?", a: "Yes! Budget ounces from $40, AA ounces from $90, AAA+ ounces from $100. All with excellent quality, freshness guaranteed, and 3g bundle pricing on top." },
       { q: "Is cheap weed still good quality?", a: "Absolutely. Our Budget flower delivers THC 24-27% from trusted Canadian growers. We never sell old, dry, or improperly stored flower. Every product meets our quality standards regardless of price point." },
       { q: "Where can I buy cheap weed in Etobicoke?", a: "Queensway Cannabis Dispensary at 1174 The Queensway, Etobicoke. We are open daily from 10:00 AM to 12:00 AM, walk in anytime, no appointment needed. We're in the heart of 1174 The Queensway & Nearby Expressway area." },
-      { q: "What promotions do you offer?", a: "Every tier includes Buy 2g Get 1g FREE (pay for 2g, get 3g). Our Exotic, Premium, and AAA+ tiers also offer Buy 3g Get 3g FREE (pay for 3g, get 6g). These promos apply on every visit." },
+      { q: "What bundle pricing do you offer?", a: "Every tier includes 3g bundle pricing (3g total). Our Exotic, Premium, and AAA+ tiers also offer 6g bundle pricing (6g total). These bundle offers apply on every visit." },
       { q: "Do you offer bulk discounts?", a: "Yes — our ounce pricing is deeply discounted compared to per-gram rates. Budget ounces are $40, AA ounces $90, and AAA+ ounces $100. The more you buy, the more you save." },
     ],
   },
@@ -146,7 +146,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Why Make the Drive to Queensway Cannabis Dispensary?",
-        body: "Queensway Cannabis Dispensary offers a wider selection and more competitive pricing than most local Peel options. You'll find over 200 strains across five quality tiers — from ultra-rare Exotic genetics (THC 35-39%) to affordable Budget flower at just $3/g. Our Buy 2g Get 1g FREE promotion applies to every tier, and our top three tiers offer Buy 3g Get 3g FREE. With prices starting at $3/g and ounces from $40, Queensway Cannabis Dispensary delivers value that's worth the short drive from Toronto.",
+        body: "Queensway Cannabis Dispensary offers a wider selection and more competitive pricing than most local Peel options. You'll find over 200 strains across five quality tiers — from ultra-rare Exotic genetics (THC 35-39%) to affordable Budget flower at just $3/g. Our 3g bundle pricing applies to every tier, and our top three tiers offer 6g bundle pricing. With prices starting at $3/g and ounces from $40, Queensway Cannabis Dispensary delivers value that's worth the short drive from Toronto.",
       },
       {
         heading: "Open Daily: 10:00 AM - 12:00 AM — Perfect for Late Night Visits",
@@ -163,9 +163,9 @@ export const SEO_PAGES: SeoPageData[] = [
     ],
     faqs: [
       { q: "How far is Queensway Cannabis Dispensary from Mississauga?", a: "We're located at 1174 The Queensway in Etobicoke — just a 15-20 minute drive from central Mississauga via Highway 401 East." },
-      { q: "Is it worth driving from Mississauga for cannabis?", a: "Absolutely. Queensway Cannabis Dispensary offers 200+ strains, prices starting at $3/g, and promotions like Buy 2g Get 1g FREE that make the short drive incredibly worthwhile." },
+      { q: "Is it worth driving from Mississauga for cannabis?", a: "Absolutely. Queensway Cannabis Dispensary offers 200+ strains, prices starting at $3/g, and bundle pricing options like 3g total that make the short drive incredibly worthwhile." },
       { q: "Is Queensway Cannabis Dispensary open late?", a: "We are open daily from 10:00 AM to 12:00 AM. Whether you're driving up at noon or late at night, we are open and ready to serve you." },
-      { q: "What's the cheapest weed near Toronto?", a: "Queensway Cannabis Dispensary has Budget flower from $3/g and value ounces from $40. With our Buy 2g Get 1g FREE promo, these are some of the best prices in the Greater Toronto Area." },
+      { q: "What's the cheapest weed near Toronto?", a: "Queensway Cannabis Dispensary has Budget flower from $3/g and value ounces from $40. With our 3g bundle pricing, these are some of the best prices in the Greater Toronto Area." },
       { q: "Is there parking at Queensway Cannabis Dispensary?", a: "Yes. Free evening street parking is available near the store and surrounding residential streets." },
       { q: "Can I take transit from Toronto to Queensway Cannabis Dispensary?", a: "Yes! Local transit connects directly subway and bus routes that will drop you off right near our location." },
       { q: "Do you carry products besides cannabis?", a: "Yes — we also carry native cigarettes, rolling papers, grinders, and other accessories. Many Mississauga customers appreciate the one-stop convenience." },
@@ -187,7 +187,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Why Choose Queensway Cannabis Dispensary Over Other Dispensaries?",
-        body: "What sets Queensway Cannabis Dispensary apart from other Etobicoke dispensaries is our combination of selection, pricing, and convenience. We carry 200+ strains across five clear quality tiers — no confusing markups, no inconsistent pricing. Our Buy 2g Get 1g FREE promotion applies to every tier, every purchase. And unlike most dispensaries that close early, we are open daily from 10:00 AM to 12:00 AM. Whether you need flower, edibles, vapes, or concentrates, Queensway Cannabis Dispensary is here.",
+        body: "What sets Queensway Cannabis Dispensary apart from other Etobicoke dispensaries is our combination of selection, pricing, and convenience. We carry 200+ strains across five clear quality tiers — no confusing markups, no inconsistent pricing. Our 3g bundle pricing applies to every tier, every purchase. And unlike most dispensaries that close early, we are open daily from 10:00 AM to 12:00 AM. Whether you need flower, edibles, vapes, or concentrates, Queensway Cannabis Dispensary is here.",
       },
       {
         heading: "Areas We Serve in Greater Toronto Area",
