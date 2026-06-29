@@ -5,11 +5,11 @@ import AgeGate from "./components/AgeGate";
 export const metadata: Metadata = {
   metadataBase: new URL("https://queenswaycannabisdispensary.com"),
   title: {
-    default: "Queensway Cannabis Dispensary — Premium Cannabis Dispensary, Etobicoke",
+    default: "Queensway Cannabis Dispensary | Etobicoke Dispensary",
     template: "%s | Queensway Cannabis Dispensary",
   },
   description:
-    "Shop 200+ premium cannabis strains at Queensway Cannabis Dispensary. Exotic, Premium, AAA+, AA & Budget flower from $3/g. Etobicoke's uplifting dispensary at 1174 The Queensway. Open Daily: 10:00 AM - 12:00 AM.",
+    "Queensway Cannabis Dispensary is an Etobicoke cannabis store on The Queensway with adult 19+ store info and category browsing for flower, pre-rolls, vapes, edibles, concentrates, and accessories. Open Daily: 10:00 AM - 12:00 AM.",
   keywords: [
     "cannabis dispensary Etobicoke",
     "weed store Etobicoke",
