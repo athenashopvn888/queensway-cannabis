@@ -15,9 +15,39 @@ const categoryLinks: { [key: string]: string } = {
   "Accessories": "/items/add-ons"
 };
 
+type StoreSchemaMarkup = {
+  "@context": string;
+  "@type": string;
+  name: string;
+  url: string;
+  telephone: string;
+  address: {
+    "@type": string;
+    streetAddress: string;
+    addressLocality: string;
+    addressRegion: string;
+    postalCode: string;
+    addressCountry: string;
+  };
+  priceRange: string;
+  openingHours?: string[];
+  geo?: {
+    "@type": string;
+    latitude: number;
+    longitude: number;
+  };
+};
+
 export function GBPLandingPage() {
+  const landmarkList = gbpLocation.localLandmarks.join(", ");
+  const nearbyAreaList = gbpLocation.nearbyAreas.slice(0, 4).join(", ");
+  const categoryGuideLinks = gbpLocation.products.slice(0, 6).map((product) => ({
+    label: product,
+    href: categoryLinks[product] || "/"
+  }));
+
   // Generate schema.org markup dynamically
-  const schemaMarkup: any = {
+  const schemaMarkup: StoreSchemaMarkup = {
     "@context": "https://schema.org",
     "@type": "Store",
     "name": gbpLocation.storeName,
@@ -81,7 +111,7 @@ export function GBPLandingPage() {
       <section className={styles.section}>
         <h2 className={styles.h2}>Weed and Cannabis Products Available</h2>
         <p className={styles.infoText}>
-          At {gbpLocation.storeName}, we offer a curated selection of weed and cannabis products for adults 19+ in {gbpLocation.city}. Enjoy some of Ontario's finest quality and value in the following categories:
+          At {gbpLocation.storeName}, we offer a curated selection of weed and cannabis products for adults 19+ in {gbpLocation.city}. Enjoy some of Ontario&apos;s finest quality and value in the following categories:
         </p>
         <div className={styles.productGrid}>
           {gbpLocation.products.map((p) => {
@@ -93,6 +123,15 @@ export function GBPLandingPage() {
             );
           })}
         </div>
+      </section>      {/* Visit Planning Section */}
+      <section className={styles.section}>
+        <h2 className={styles.h2}>Plan a Visit to {gbpLocation.storeName}</h2>
+        <p className={styles.infoText}>
+          Planning a visit to {gbpLocation.storeName} is easier when the main store details are in one place. Adults 19+ can use this page to confirm the store address, phone number, hours, local area, and menu-category links before heading to {gbpLocation.city}.
+        </p>
+        <p className={styles.infoText}>
+          The store is near {gbpLocation.neighborhood || gbpLocation.city}, with local reference points including {landmarkList}. Nearby shoppers also use this page from {nearbyAreaList}.
+        </p>
       </section>
 
       {/* Location & NAP Section */}
@@ -161,12 +200,37 @@ export function GBPLandingPage() {
             </span>
           ))}
         </div>
+      </section>      {/* Category Link Context Section */}
+      <section className={styles.section}>
+        <h2 className={styles.h2}>Compare Menu Categories Before You Visit</h2>
+        <p className={styles.infoText}>
+          These category links help adults 19+ browse general menu sections before visiting. Product selection can change, so use the live menu for current details rather than assuming availability from this guide.
+        </p>
+        <div className={styles.productGrid}>
+          {categoryGuideLinks.map((link) => (
+            <Link key={link.label} href={link.href} className={styles.productCard}>
+              {link.label}
+            </Link>
+          ))}
+        </div>
       </section>
 
       {/* FAQ Section */}
-      <section className={styles.section}>
+      <section id="faq" className={styles.section}>
         <h2 className={styles.h2}>Frequently Asked Questions</h2>
         <div className={styles.faqList}>
+          <div className={styles.faqItem}>
+            <h3 className={styles.faqQuestion}>How should I plan a visit to {gbpLocation.storeName}?</h3>
+            <p className={styles.faqAnswer}>
+              Check the store address, phone number, hours, menu links, and nearby-area notes on this page before visiting. {gbpLocation.storeName} serves adults 19+ near {gbpLocation.neighborhood || gbpLocation.city} and surrounding {gbpLocation.city} areas.
+            </p>
+          </div>
+          <div className={styles.faqItem}>
+            <h3 className={styles.faqQuestion}>Can I use this page to compare menu categories?</h3>
+            <p className={styles.faqAnswer}>
+              Yes. The category links on this page are intended to help adults 19+ compare general menu sections such as flower, pre-rolls, edibles, vapes, concentrates, and accessories before checking the live menu.
+            </p>
+          </div>
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>Where is {gbpLocation.storeName} located?</h3>
             <p className={styles.faqAnswer}>{gbpLocation.storeName} is located at {gbpLocation.address}.</p>
