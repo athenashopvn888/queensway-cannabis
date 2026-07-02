@@ -25,7 +25,7 @@ export const STORE_BLOG_CONFIG = {
   storeCode: "QCD01",
   storeName: "Queensway Cannabis Dispensary",
   city: "Etobicoke",
-  domain: "queenswaycannabisdispensary.com",
+  domain: "www.queenswaycannabisdispensary.com",
   storePath: "/weed-dispensary-etobicoke",
 };
 

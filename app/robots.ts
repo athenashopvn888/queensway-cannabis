@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://queenswaycannabisdispensary.com/sitemap.xml",
+    sitemap: "https://www.queenswaycannabisdispensary.com/sitemap.xml",
   };
 }
