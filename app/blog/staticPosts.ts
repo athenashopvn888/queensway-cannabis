@@ -39,7 +39,7 @@ export const STATIC_POSTS: StaticBlogPost[] = [
     meta_description: "Adult 19+ guide to Queensway Cannabis Dispensary around The Queensway / Etobicoke, with local store-page checks, menu-category context, and safe visit planning.",
     h1: "Queensway Cannabis Dispensary Local Store Guide for Adults 19+",
     excerpt: "Queensway Cannabis Dispensary guide for adults 19+ reviewing store information around The Queensway / Etobicoke.",
-    author: "Athena SEO Team",
+    author: "The Queensway Cannabis Dispensary Team",
     date: "2026-07-02",
     category: "Store Guide",
     readTime: "4 min",
