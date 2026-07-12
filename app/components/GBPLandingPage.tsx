@@ -134,7 +134,7 @@ export function GBPLandingPage() {
         </p>
         <p className={styles.infoText}>
           For a fuller local overview, read the{" "}
-          <Link href="/blog/queensway-cannabis-dispensary-etobicoke-store-guide">Queensway Cannabis Etobicoke guide</Link>.
+          <Link href="/">Home</Link>.
         </p>
       </section>
 
