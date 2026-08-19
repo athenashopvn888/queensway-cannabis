@@ -113,7 +113,7 @@ export default function FAQPage() {
           <div className={styles.ctaSection}>
             <h2 className={styles.ctaTitle}>Still have questions?</h2>
             <p className={styles.ctaText}>
-              Call us at <strong>(437) 331-9109</strong> or visit us at 1174 The Queensway, Etobicoke.
+              Call us at <strong>(437) 782-9234</strong> or visit us at 1174 The Queensway, Etobicoke.
             </p>
           </div>
         </div>

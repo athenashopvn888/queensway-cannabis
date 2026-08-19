@@ -44,7 +44,7 @@ export const SEO_PAGES: SeoPageData[] = [
       },
       {
         heading: "Serving Etobicoke, Toronto & Mississauga",
-        body: "Queensway Cannabis Dispensary proudly serves customers from across the Greater Toronto Area. Whether you're coming from Weston, Mount Dennis, North Etobicoke, Etobicoke, Mississauga, Brampton, or downtown Toronto, we welcome you. Call us at (437) 331-9109 or visit us at 1174 The Queensway, Etobicoke, ON M8Z 1R5.",
+        body: "Queensway Cannabis Dispensary proudly serves customers from across the Greater Toronto Area. Whether you're coming from Weston, Mount Dennis, North Etobicoke, Etobicoke, Mississauga, Brampton, or downtown Toronto, we welcome you. Call us at (437) 782-9234 or visit us at 1174 The Queensway, Etobicoke, ON M8Z 1R5.",
       },
     ],
     faqs: [
