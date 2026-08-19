@@ -77,7 +77,7 @@ const jsonLd = {
   name: "Queensway Cannabis Dispensary",
   description: "Cannabis dispensary at 1174 The Queensway in Etobicoke, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open Daily: 10:00 AM - 12:00 AM.",
   url: "https://queenswaycannabisdispensary.com",
-  telephone: "+14373319109",
+  telephone: "+14377829234",
   image: "https://queenswaycannabisdispensary.com/wp-content/uploads/2026/04/7Clmh.jpg",
   priceRange: "$3 - $12/g",
   address: {
