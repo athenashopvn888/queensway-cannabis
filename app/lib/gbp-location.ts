@@ -9,8 +9,8 @@ export const gbpLocation = {
   address: "1174 The Queensway, Etobicoke, ON M8Z 1R5",
   streetAddress: "1174 The Queensway",
   postalCode: "M8Z 1R5",
-  phone: "(437) 331-9109",
-  phoneIntl: "+14373319109",
+  phone: "(437) 782-9234",
+  phoneIntl: "+14377829234",
   neighborhood: "The Queensway / Etobicoke",
   nearbyAreas: ["The Queensway", "Etobicoke", "Islington", "Royal York", "Mimico", "Humber Bay", "Stonegate-Queensway", "TTC"],
   products: [
