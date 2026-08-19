@@ -78,7 +78,7 @@ const LOCAL_FAQS = [
   },
   {
     q: "Where is Queensway Cannabis Dispensary located?",
-    a: "We are located at 1174 The Queensway, Etobicoke, ON M8Z 1R5. Visit us in person or call us at (437) 331-9109. Free evening street parking is available.",
+    a: "We are located at 1174 The Queensway, Etobicoke, ON M8Z 1R5. Visit us in person or call us at (437) 782-9234. Free evening street parking is available.",
   },
   {
     q: "What is the cheapest weed at Queensway Cannabis Dispensary?",
