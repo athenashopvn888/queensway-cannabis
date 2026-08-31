@@ -3,7 +3,7 @@
    Clean White Theme - Cannabis Green Accents
    ================================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 /* -- CSS Variables -- */
 :root {
@@ -14,18 +14,18 @@
   --bg-card-hover: #f0f5f2;
   --bg-glass: rgba(255, 255, 255, 0.85);
 
-    /* Brand colors - bold urban */
-  --green-deep: #3b0764;
-  --green-dark: #581c87;
-  --green-mid: #8b5cf6;
-  --green-light: #a78bfa;
-  --green-pale: #ddd6fe;
-  --green-mist: #f5f3ff;
+  /* Current Queensway green system */
+  --green-deep: #082a17;
+  --green-dark: #126b37;
+  --green-mid: #24bc63;
+  --green-light: #63d68e;
+  --green-pale: #ccefd9;
+  --green-mist: #edf8f0;
   --sale-red: #E5383B;
   --hot-orange: #FF5400;
   --hot-gradient: linear-gradient(135deg, #FF5400, #E5383B);
-  --green-gradient: linear-gradient(135deg, #581c87, #8b5cf6, #a78bfa);
-  --accent-gradient: linear-gradient(135deg, #8b5cf6, #581c87);
+  --green-gradient: linear-gradient(135deg, #126b37, #24bc63);
+  --accent-gradient: linear-gradient(135deg, #24bc63, #126b37);
 
   /* Tier colors */
   --tier-exotic: #B45309;
@@ -67,8 +67,8 @@
   --transition-slow: 0.5s var(--ease-smooth);
 
   /* Typography */
-  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
-  --font-body: 'Space Grotesk', 'Outfit', system-ui, sans-serif;
+  --font-display: 'Archivo', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', 'Archivo', system-ui, sans-serif;
 }
 
 /* -- Global Reset -- */

@@ -1,165 +1,191 @@
-.navbar {
-  position: fixed;
+.header {
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.92);
-  backdrop-filter: blur(20px) saturate(1.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+  background: rgba(250, 251, 247, 0.96);
+  border-bottom: 1px solid #171a17;
+  backdrop-filter: blur(16px);
+  color: #111511;
 }
 
-/* ── Top bar: logo + open now ── */
-.topBar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1440px;
+.inner {
+  width: min(100% - 3rem, 1440px);
+  min-height: 74px;
   margin: 0 auto;
-  padding: 0 20px;
-  height: 52px;
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) auto minmax(250px, 1fr);
+  align-items: center;
+  gap: 28px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  text-decoration: none;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
-.logoImg {
-  width: 52px;
-  height: 52px;
-  border-radius: 6px;
+  width: 46px;
+  height: 46px;
   object-fit: contain;
 }
-.brand {
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brandText strong {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 900;
-  color: white;
-  letter-spacing: 0.02em;
-}
-.fire {
-  display: inline-block;
-  margin: 0 2px;
-  animation: fireFlicker 2s ease-in-out infinite;
-}
-@keyframes fireFlicker {
-  0%, 100% { opacity: 1; filter: brightness(1); }
-  50% { opacity: 0.92; filter: brightness(1.1); }
-}
-
-.open {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #34d399;
-  background: rgba(52, 211, 153, 0.1);
-  border: 1px solid rgba(52, 211, 153, 0.25);
-  padding: 5px 12px;
-  border-radius: 100px;
-  white-space: nowrap;
-}
-.dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #34d399;
-  box-shadow: 0 0 6px #34d399;
-  animation: pulse 2s ease-in-out infinite;
-}
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
 }
 
-.topBarRight {
+.brandText small {
+  margin-top: 5px;
+  color: #228849;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.nav {
+  display: flex;
+  align-items: stretch;
+  gap: 28px;
+  height: 74px;
+}
+
+.nav a {
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: #161916;
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 19px;
+  left: 0;
+  height: 2px;
+  background: #22b862;
+  transform: scaleX(0);
+  transition: transform 180ms ease;
+}
+
+.nav a:hover::after,
+.nav .active::after {
+  transform: scaleX(1);
+}
+
+.actions {
+  justify-self: end;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.gamesBtn {
+.call,
+.reserve {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #fbbf24;
-  background: rgba(251, 191, 36, 0.1);
-  border: 1px solid rgba(251, 191, 36, 0.3);
-  padding: 5px 14px;
-  border-radius: 100px;
-  white-space: nowrap;
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-.gamesBtn:hover {
-  background: rgba(251, 191, 36, 0.2);
-  border-color: rgba(251, 191, 36, 0.5);
-  transform: scale(1.04);
-  box-shadow: 0 0 14px rgba(251, 191, 36, 0.2);
-}
-
-/* ── Horizontal scrollable link bar ── */
-.scrollBar {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-}
-.scrollBar::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
-}
-
-.scrollInner {
-  display: flex;
-  gap: 4px;
-  padding: 8px 20px;
-  min-width: max-content;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.pill {
-  display: inline-flex;
-  align-items: center;
-  white-space: nowrap;
-  padding: 6px 14px;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
   font-size: 12px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 100px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   text-decoration: none;
-  transition: all 0.2s ease;
-  flex-shrink: 0;
-}
-.pill:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-.pill:active {
-  transform: scale(0.96);
 }
 
-/* ── Active nav pill — green highlight ── */
-.pillActive {
-  color: #fff;
-  background: rgba(45, 106, 79, 0.85);
-  border-color: #2D6A4F;
-  box-shadow: 0 0 12px rgba(45, 106, 79, 0.3);
+.call {
+  border: 1px solid #111511;
+  color: #111511;
+  background: transparent;
 }
-.pillActive:hover {
-  background: rgba(45, 106, 79, 0.95);
-  border-color: #40916C;
+
+.reserve {
+  color: #082a17;
+  background: #24bc63;
+  border: 1px solid #24bc63;
+}
+
+.mobileNav {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .inner {
+    width: min(100% - 2rem, 1440px);
+    grid-template-columns: 1fr auto;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .actions .call {
+    display: none;
+  }
+
+  .mobileNav {
+    display: flex;
+    gap: 24px;
+    padding: 10px 16px;
+    overflow-x: auto;
+    border-top: 1px solid rgba(17, 21, 17, 0.12);
+    scrollbar-width: none;
+  }
+
+  .mobileNav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobileNav a {
+    flex: 0 0 auto;
+    color: #171a17;
+    font-size: 11px;
+    font-weight: 850;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 560px) {
+  .inner {
+    min-height: 68px;
+  }
+
+  .logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brandText strong {
+    font-size: 14px;
+  }
+
+  .brandText small {
+    font-size: 8px;
+  }
+
+  .reserve {
+    min-height: 40px;
+    padding: 0 14px;
+    font-size: 10px;
+  }
 }
