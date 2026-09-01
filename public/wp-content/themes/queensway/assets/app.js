@@ -22,9 +22,9 @@
   var URLS = window.QCD_URLS || {};
   var CATALOG_URL = URLS.catalog || "category.html";
   var STORE = window.QCD_STORE || {};
-  var TEL_HREF = STORE.tel || "tel:+14373319109";
-  var PHONE_LABEL = STORE.phone || "(437) 331-9109";
-  var SMS_NUM = STORE.sms || "+14373319109";
+  var TEL_HREF = STORE.tel || "tel:+14377829234";
+  var PHONE_LABEL = STORE.phone || "(437) 782-9234";
+  var SMS_NUM = STORE.sms || "+14377829234";
   var PAGE_DEFAULT_CAT = window.QCD_FORCED_CAT || "all";
   function catUrl(slug) {
     return CATALOG_URL + (CATALOG_URL.indexOf("?") < 0 ? "?" : "&") + "cat=" + slug;
