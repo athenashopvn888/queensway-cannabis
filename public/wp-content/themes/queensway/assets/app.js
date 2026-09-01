@@ -209,6 +209,7 @@
     if (!ok) { try { ok = /(?:^|;\s*)qcd_age_ok=1(?:;|$)/.test(document.cookie || ""); } catch (e) {} }
     if (ok) { gate.setAttribute("hidden", ""); return; }
 
+    gate.removeAttribute("hidden");
     document.body.style.overflow = "hidden";
     var inerted = [];
     Array.prototype.forEach.call(document.body.children, function (el) {
