@@ -130,7 +130,9 @@
   /* ---------- Time-aware store hours (America/Toronto) ----------
      WP: minutes come from window.QCD_HOURS when inlined. */
   var HOURS = window.QCD_HOURS || {};
-  var OPEN_MIN = HOURS.open || 10 * 60, CLOSE_MIN = HOURS.close || 24 * 60;
+  var OPEN_MIN = Number.isFinite(HOURS.open) ? HOURS.open : 10 * 60;
+  var CLOSE_MIN = Number.isFinite(HOURS.close) ? HOURS.close : 24 * 60;
+  var OPEN_24_HOURS = OPEN_MIN === 0 && CLOSE_MIN === 24 * 60;
   function torontoMinutes() {
     try {
       var parts = new Intl.DateTimeFormat("en-CA", {
@@ -142,6 +144,7 @@
     } catch (e) { var d = new Date(); return d.getHours() * 60 + d.getMinutes(); }
   }
   function storeState() {
+    if (OPEN_24_HOURS) return { open: true, label: "Open 24 hours" };
     var mins = torontoMinutes();
     if (mins >= OPEN_MIN) {
       var left = CLOSE_MIN - mins;
@@ -159,6 +162,18 @@
     var mins = torontoMinutes();
     var opts = [];
     function fmt(h) { var hh = h % 24; var am = hh < 12; var d = hh % 12 === 0 ? 12 : hh % 12; return d + (am ? " AM" : " PM"); }
+    if (OPEN_24_HOURS) {
+      opts.push({ v: "asap", t: "ASAP (within the hour)" });
+      var nextHour = Math.ceil((mins + 45) / 60);
+      for (var offset = 0; offset < 7; offset++) {
+        var hour = nextHour + offset;
+        opts.push({
+          v: (hour < 24 ? "today-" : "tmrw-") + (hour % 24),
+          t: (hour < 24 ? "Today " : "Tomorrow ") + fmt(hour) + "–" + fmt(hour + 1)
+        });
+      }
+      return opts;
+    }
     var open = mins >= OPEN_MIN && mins < CLOSE_MIN;
     if (open && (CLOSE_MIN - mins) >= 60) opts.push({ v: "asap", t: "ASAP (within the hour)" });
     var start = Math.max(OPEN_MIN, mins + 45);

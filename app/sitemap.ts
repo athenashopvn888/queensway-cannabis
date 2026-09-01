@@ -57,6 +57,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
 
-  return [...staticPages, ...tierPages, ...itemPages, ...flowerPages, ...itemDetailPages, ...seoPages];
+  const pages = [...staticPages, ...tierPages, ...itemPages, ...flowerPages, ...itemDetailPages, ...seoPages];
+  return Array.from(new Map(pages.map((page) => [page.url, page])).values());
 }
-
