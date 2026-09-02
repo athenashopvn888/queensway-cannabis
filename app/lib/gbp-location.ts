@@ -1,7 +1,7 @@
 // Auto-generated Google Business Profile Local SEO Location Configuration
 export const gbpLocation = {
   storeName: "Queensway Cannabis Dispensary",
-  domain: "queenswaycannabisdispensary.com",
+  domain: "www.queenswaycannabisdispensary.com",
   city: "Etobicoke",
   province: "ON",
   country: "CA",
