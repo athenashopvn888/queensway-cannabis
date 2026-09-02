@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Explore Exotic Weed, Premium Weed, AAA+ Weed, AA Weed and Budget Weed from Queensway Cannabis Dispensary in Etobicoke.",
   alternates: {
     canonical:
-      "https://queenswaycannabisdispensary.com/resources/weed-flower-guide",
+      "https://www.queenswaycannabisdispensary.com/resources/weed-flower-guide",
   },
 };
 

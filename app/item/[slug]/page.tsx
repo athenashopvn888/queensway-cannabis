@@ -29,7 +29,7 @@ export async function generateMetadata({
     title: `${item.name} | ${item.category} | Queensway Cannabis Dispensary Etobicoke`,
     description: itemData.metaDescription,
     alternates: {
-      canonical: `https://queenswaycannabisdispensary.com/item/${slug}`,
+      canonical: `https://www.queenswaycannabisdispensary.com/item/${slug}`,
     },
     openGraph: {
       title: `${item.name} | Queensway Cannabis Dispensary`,
@@ -54,7 +54,7 @@ function getJsonLd(item: ItemProduct) {
 
   const offers: any = {
     "@type": "Offer",
-    url: `https://queenswaycannabisdispensary.com/item/${item.slug}`,
+    url: `https://www.queenswaycannabisdispensary.com/item/${item.slug}`,
     priceCurrency: "CAD",
     availability: "https://schema.org/InStock",
     itemCondition: "https://schema.org/NewCondition",
@@ -74,7 +74,7 @@ function getJsonLd(item: ItemProduct) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: item.name,
-    image: item.image ? [item.image.startsWith('http') ? item.image : `https://queenswaycannabisdispensary.com${item.image.startsWith('/') ? '' : '/'}${item.image}`] : undefined,
+    image: item.image ? [item.image.startsWith('http') ? item.image : `https://www.queenswaycannabisdispensary.com${item.image.startsWith('/') ? '' : '/'}${item.image}`] : undefined,
     description: itemData.description,
     brand: { "@type": "Brand", name: "Queensway Cannabis Dispensary" },
     sku: cleanSku(item.sku || item.slug),
@@ -93,19 +93,19 @@ function getBreadcrumbJsonLd(item: ItemProduct) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://queenswaycannabisdispensary.com"
+        "item": "https://www.queenswaycannabisdispensary.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": item.category,
-        "item": `https://queenswaycannabisdispensary.com/items/${catSlug}`
+        "item": `https://www.queenswaycannabisdispensary.com/items/${catSlug}`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": item.name,
-        "item": `https://queenswaycannabisdispensary.com/item/${item.slug}`
+        "item": `https://www.queenswaycannabisdispensary.com/item/${item.slug}`
       }
     ]
   };

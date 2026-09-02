@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Store guides and locally useful information from Queensway Cannabis Dispensary in Etobicoke.",
   alternates: {
-    canonical: "https://queenswaycannabisdispensary.com/blog/",
+    canonical: "https://www.queenswaycannabisdispensary.com/blog/",
   },
 };
 

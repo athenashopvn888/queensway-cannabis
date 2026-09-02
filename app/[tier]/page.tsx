@@ -37,7 +37,7 @@ export async function generateMetadata({
     },
     description: seo?.seoIntro || `Explore ${tierInfo.config.name} at Queensway Cannabis Dispensary in Etobicoke.`,
     alternates: {
-      canonical: `https://queenswaycannabisdispensary.com/${tierSlug}`,
+      canonical: `https://www.queenswaycannabisdispensary.com/${tierSlug}`,
     },
     openGraph: {
       title: seo?.seoTitle || `${tierInfo.config.name} | Queensway Cannabis Dispensary`,

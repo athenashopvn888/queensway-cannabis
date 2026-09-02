@@ -3,7 +3,7 @@ import "./globals.css";
 import AgeGate from "./components/AgeGate";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://queenswaycannabisdispensary.com"),
+  metadataBase: new URL("https://www.queenswaycannabisdispensary.com"),
   title: {
     default: "Queensway Cannabis Dispensary | Etobicoke Dispensary",
     template: "%s | Queensway Cannabis Dispensary",
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_CA",
-    url: "https://queenswaycannabisdispensary.com",
+    url: "https://www.queenswaycannabisdispensary.com",
     siteName: "Queensway Cannabis Dispensary",
     title: "Queensway Cannabis Dispensary — Premium Etobicoke Cannabis Dispensary",
     description:
       "200+ strains from $3/g. Exotic to Budget. Etobicoke's uplifting dispensary at 1174 The Queensway. Open 24 Hours.",
     images: [
       {
-        url: "https://queenswaycannabisdispensary.com/wp-content/uploads/2026/04/46Oi5.jpg",
+        url: "https://www.queenswaycannabisdispensary.com/wp-content/uploads/2026/04/46Oi5.jpg",
         width: 1200,
         height: 630,
         alt: "Queensway Cannabis Dispensary — Premium Cannabis Dispensary Etobicoke",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Queensway Cannabis Dispensary — Etobicoke's Uplifting Dispensary",
     description: "200+ strains from $3/g. Open 24 Hours at 1174 The Queensway, Etobicoke.",
-    images: ["https://queenswaycannabisdispensary.com/wp-content/uploads/2026/04/46Oi5.jpg"],
+    images: ["https://www.queenswaycannabisdispensary.com/wp-content/uploads/2026/04/46Oi5.jpg"],
   },
   robots: {
     index: true,
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://queenswaycannabisdispensary.com",
+    canonical: "https://www.queenswaycannabisdispensary.com",
   },
   verification: {
     // google: "your-google-verification-code",
@@ -73,12 +73,12 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Store",
   additionalType: "https://schema.org/Store",
-  "@id": "https://queenswaycannabisdispensary.com",
+  "@id": "https://www.queenswaycannabisdispensary.com",
   name: "Queensway Cannabis Dispensary",
   description: "Cannabis dispensary at 1174 The Queensway in Etobicoke, ON. Shop exotic, premium, AAA+, AA, and budget flower tiers plus edibles, prerolls, and vapes. Open 24 Hours.",
-  url: "https://queenswaycannabisdispensary.com",
+  url: "https://www.queenswaycannabisdispensary.com",
   telephone: "+14377829234",
-  image: "https://queenswaycannabisdispensary.com/wp-content/uploads/2026/04/7Clmh.jpg",
+  image: "https://www.queenswaycannabisdispensary.com/wp-content/uploads/2026/04/7Clmh.jpg",
   priceRange: "$3 - $12/g",
   address: {
     "@type": "PostalAddress",
@@ -110,10 +110,10 @@ const jsonLd = {
   }
 ],
   sameAs: [
-    "https://queenswaycannabisdispensary.com/",
-    "https://queenswaycannabisdispensary.com/",
+    "https://www.queenswaycannabisdispensary.com/",
+    "https://www.queenswaycannabisdispensary.com/",
   ],
-  hasMap: "https://queenswaycannabisdispensary.com/",
+  hasMap: "https://www.queenswaycannabisdispensary.com/",
   areaServed: {
     "@type": "City",
     name: "Etobicoke",

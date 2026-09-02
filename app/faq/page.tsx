@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Frequently asked questions about Queensway Cannabis Dispensary in Etobicoke. Hours, location, products, pricing, bundle offers, and everything you need to know before visiting.",
   alternates: {
-    canonical: "https://queenswaycannabisdispensary.com/faq",
+    canonical: "https://www.queenswaycannabisdispensary.com/faq",
   },
 };
 

@@ -31,7 +31,7 @@ export async function generateMetadata({
     title: `${flower.name} | ${tierName} ${flower.type === "indica" ? "Indica" : flower.type === "sativa" ? "Sativa" : "Hybrid"} | THC ${flower.thc} | Queensway Cannabis Dispensary Etobicoke`,
     description: strainData.metaDescription,
     alternates: {
-      canonical: `https://queenswaycannabisdispensary.com/flower/${slug}`,
+      canonical: `https://www.queenswaycannabisdispensary.com/flower/${slug}`,
     },
     openGraph: {
       title: `${flower.name} | Queensway Cannabis Dispensary`,
@@ -60,7 +60,7 @@ function getJsonLd(flower: FlowerProduct) {
 
   const offers: any = {
     "@type": "Offer",
-    url: `https://queenswaycannabisdispensary.com/flower/${flower.slug}`,
+    url: `https://www.queenswaycannabisdispensary.com/flower/${flower.slug}`,
     priceCurrency: "CAD",
     availability: "https://schema.org/InStock",
     itemCondition: "https://schema.org/NewCondition",
@@ -80,7 +80,7 @@ function getJsonLd(flower: FlowerProduct) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: flower.name,
-    image: flower.image ? [flower.image.startsWith('http') ? flower.image : `https://queenswaycannabisdispensary.com${flower.image.startsWith('/') ? '' : '/'}${flower.image}`] : undefined,
+    image: flower.image ? [flower.image.startsWith('http') ? flower.image : `https://www.queenswaycannabisdispensary.com${flower.image.startsWith('/') ? '' : '/'}${flower.image}`] : undefined,
     description: strainData.description,
     brand: { "@type": "Brand", name: "Queensway Cannabis Dispensary" },
     sku: cleanSku(flower.sku || flower.slug),
@@ -101,19 +101,19 @@ function getBreadcrumbJsonLd(flower: FlowerProduct) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://queenswaycannabisdispensary.com"
+        "item": "https://www.queenswaycannabisdispensary.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": tierName,
-        "item": `https://queenswaycannabisdispensary.com/${tierSlug}`
+        "item": `https://www.queenswaycannabisdispensary.com/${tierSlug}`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": flower.name,
-        "item": `https://queenswaycannabisdispensary.com/flower/${flower.slug}`
+        "item": `https://www.queenswaycannabisdispensary.com/flower/${flower.slug}`
       }
     ]
   };

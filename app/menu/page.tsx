@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Browse flower, pre-rolls, edibles, vapes, concentrates and accessories at Queensway Cannabis Dispensary in Etobicoke.",
   alternates: {
-    canonical: "https://queenswaycannabisdispensary.com/menu/",
+    canonical: "https://www.queenswaycannabisdispensary.com/menu/",
   },
 };
 

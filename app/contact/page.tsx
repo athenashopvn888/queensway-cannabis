@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Visit Queensway Cannabis Dispensary at 1174 The Queensway, Etobicoke, ON M8Z 1R5. We are open 24 hours a day, 7 days a week. Walk-ins welcome.",
   alternates: {
-    canonical: "https://queenswaycannabisdispensary.com/contact",
+    canonical: "https://www.queenswaycannabisdispensary.com/contact",
   },
   openGraph: {
     title: "Contact Queensway Cannabis Dispensary — Etobicoke Dispensary",
