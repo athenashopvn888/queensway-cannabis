@@ -8,10 +8,26 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "stclaircannabis.com" },
     ],
   },
+  async rewrites() {
+    return {
+      beforeFiles: [
+        { source: "/", destination: "/takeover/index.html" },
+      ],
+    };
+  },
   async redirects() {
     return [
-      { source: "/blog", destination: "/", permanent: true },
-      { source: "/blog/:path*", destination: "/", permanent: true },
+      { source: "/shop", destination: "/menu", permanent: true },
+      { source: "/menu/flower", destination: "/exotic", permanent: true },
+      { source: "/menu/pre-rolls", destination: "/items/prerolls", permanent: true },
+      { source: "/menu/edibles", destination: "/items/edibles", permanent: true },
+      { source: "/menu/vapes", destination: "/items/vape-disposables", permanent: true },
+      { source: "/menu/disposables", destination: "/items/vape-disposables", permanent: true },
+      { source: "/menu/concentrates", destination: "/items/concentrates", permanent: true },
+      { source: "/menu/accessories", destination: "/items/add-ons", permanent: true },
+      { source: "/menu/add-ons", destination: "/items/add-ons", permanent: true },
+      { source: "/menu/magic", destination: "/items/magic", permanent: true },
+      { source: "/menu/tobacco", destination: "/items/cigarettes", permanent: true },
       { source: "/edibles", destination: "/items/edibles", permanent: true },
       { source: "/vapes", destination: "/items/vapes", permanent: true },
       { source: "/vape-disposables", destination: "/items/vape-disposables", permanent: true },

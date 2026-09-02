@@ -28,7 +28,7 @@ export const gbpLocation = {
   mapEmbedUrl: "",
   latitude: "43.6223417",
   longitude: "-79.5217307",
-  hours: ["Open Daily: 10:00 AM - 12:00 AM"],
+  hours: ["Open 24 Hours"],
   seoTitle: "Queensway Cannabis Dispensary | Weed Dispensary in Etobicoke",
   metaDescription: "Queensway Cannabis Dispensary is a local weed dispensary in Etobicoke offering flower, pre-rolls, edibles, vapes, concentrates, CBD, and service for adults 19+.",
   localLandmarks: ["The Queensway", "Etobicoke", "Islington"],

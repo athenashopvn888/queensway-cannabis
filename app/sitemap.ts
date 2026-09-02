@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { TIER_CONFIG, CATEGORY_CONFIG, allFlowers, allItems } from "./lib/products";
 import { SEO_PAGES } from "./lib/seoPages";
 
-const BASE = "https://www.queenswaycannabisdispensary.com";
+const BASE = "https://queenswaycannabisdispensary.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
@@ -57,6 +57,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
 
-  return [...staticPages, ...tierPages, ...itemPages, ...flowerPages, ...itemDetailPages, ...seoPages];
+  const pages = [...staticPages, ...tierPages, ...itemPages, ...flowerPages, ...itemDetailPages, ...seoPages];
+  return Array.from(new Map(pages.map((page) => [page.url, page])).values());
 }
-

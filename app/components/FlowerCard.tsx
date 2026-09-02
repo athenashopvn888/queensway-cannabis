@@ -87,9 +87,16 @@ export default function FlowerCard({
           
             onError={(e) => {
               const t = e.currentTarget;
-              if (t.src.indexOf('r2.dev') !== -1 || t.src.indexOf('images.torontodispensaryhub.com') !== -1) {
+              if (t.dataset.fallbackAttempted === "true") {
+                t.onerror = null;
+                t.src = "/storeFavicon.webp";
+              } else if (t.src.indexOf('r2.dev') !== -1 || t.src.indexOf('images.torontodispensaryhub.com') !== -1) {
                 const filename = t.src.split('/').pop();
+                t.dataset.fallbackAttempted = "true";
                 t.src = 'https://athena-cannabis-images.vercel.app/products/' + filename;
+              } else {
+                t.onerror = null;
+                t.src = "/storeFavicon.webp";
               }
             }}
           />

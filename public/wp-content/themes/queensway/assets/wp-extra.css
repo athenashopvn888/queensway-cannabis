@@ -1,0 +1,54 @@
+/* ============================================================
+   WordPress-only additions. assets/styles.css is the untouched
+   preview design system; everything WP-specific lands here.
+   ============================================================ */
+
+/* The hidden attribute must always win. Author display rules (e.g.
+   .rsv-empty{display:flex}) otherwise override the UA's [hidden] rule,
+   leaving "hidden" drawer sections visible — a latent quirk inherited
+   from the preview, fixed here for every toggled section at once. */
+[hidden] { display: none !important; }
+
+/* Custom (raster) logos: never distort, soften corners on dark surfaces.
+   Invisible for the bundled SVG crest (transparent corners). */
+.brand-logo, .agegate__logo { object-fit: contain; border-radius: 6px; }
+
+/* Blog single / generic page body (readable on paper, not the dark .prose) */
+.post-single { max-width: 760px; margin-inline: auto; }
+.post-single p { color: var(--slate); font-size: 1.02rem; margin-top: 1rem; line-height: 1.7; }
+.post-single h2, .post-single h3 { margin-top: 2.2rem; }
+.post-single h2 { font-size: 1.6rem; }
+.post-single h3 { font-size: 1.25rem; }
+.post-single ul, .post-single ol { margin-top: 1rem; padding-left: 1.25rem; color: var(--slate); }
+.post-single ul { list-style: square; }
+.post-single ol { list-style: decimal; }
+.post-single li { margin-top: .45rem; }
+.post-single a { color: var(--green-700); font-weight: 600; }
+.post-single a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.post-single img { border: 1px solid var(--ink); margin-top: 1.25rem; }
+.post-single blockquote { border-left: 3px solid var(--green-500); padding-left: 1.1rem; margin-top: 1.25rem; color: var(--ink); font-weight: 600; }
+
+/* Post card title links inherit card styling */
+.post-card__body h3 a { color: inherit; }
+
+/* Pagination (the_posts_pagination) in the design language */
+.qcd-pagination { margin-top: 2.25rem; }
+.qcd-pagination .nav-links { display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; }
+.qcd-pagination .page-numbers { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: .55rem 1rem; border: 1.5px solid var(--ink); border-radius: var(--r-pill); font-family: var(--font-display); font-weight: 700; font-size: .82rem; text-transform: uppercase; color: var(--ink); transition: background .15s, color .15s; }
+.qcd-pagination .page-numbers:hover { background: var(--ink); color: #fff; }
+.qcd-pagination .page-numbers.current { background: var(--black); color: #fff; }
+.qcd-pagination .page-numbers.dots { border: 0; }
+
+/* WP core a11y class (pagination screen-reader headings etc.) */
+.screen-reader-text { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(1px,1px,1px,1px); word-wrap: normal !important; }
+
+/* Admin bar offset for logged-in staff viewing the public site */
+body.admin-bar .site-header { top: 32px; }
+@media (max-width: 782px) { body.admin-bar .site-header { top: 0; } }
+
+/* WP image alignment basics inside post content */
+.post-single .alignleft { float: left; margin: .5rem 1.25rem 1rem 0; }
+.post-single .alignright { float: right; margin: .5rem 0 1rem 1.25rem; }
+.post-single .aligncenter { margin-inline: auto; }
+.post-single .wp-caption { max-width: 100%; }
+.post-single .wp-caption-text { font-size: .8rem; color: var(--mute); margin-top: .4rem; }
