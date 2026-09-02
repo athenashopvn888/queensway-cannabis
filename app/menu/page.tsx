@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 
 const categories = [
   {
-    name: "Flower",
+    name: "Weed Flower",
     detail: "Exotic to budget · five tiers",
-    href: "/exotic",
+    href: "/exotic-weed",
     count: allFlowers.length,
     image: allFlowers.find((product) => product.image)?.image,
   },
@@ -44,11 +44,18 @@ const categories = [
     image: allItems.find((item) => item.category === "EDIBLES" && item.image)?.image,
   },
   {
-    name: "Vapes",
-    detail: "Cartridges and disposables",
+    name: "THC Vape",
+    detail: "Cannabis vape products",
     href: "/items/vape-disposables",
     count: allItems.filter((item) => item.category === "VAPE DISPOSABLE").length,
     image: allItems.find((item) => item.category === "VAPE DISPOSABLE" && item.image)?.image,
+  },
+  {
+    name: "Nicotine Vape",
+    detail: "Nicotine products for adults 19+",
+    href: "/items/vapes",
+    count: allItems.filter((item) => item.category === "VAPE PENS").length,
+    image: allItems.find((item) => item.category === "VAPE PENS" && item.image)?.image,
   },
   {
     name: "Accessories",
@@ -100,11 +107,11 @@ export default function MenuPage() {
           <h2>Choose your tier</h2>
         </div>
         <nav>
-          <Link href="/exotic">Exotic</Link>
-          <Link href="/premium">Premium</Link>
-          <Link href="/aaa">AAA+</Link>
-          <Link href="/aa">AA</Link>
-          <Link href="/budget">Budget</Link>
+          <Link href="/exotic-weed">Exotic Weed</Link>
+          <Link href="/premium-weed">Premium Weed</Link>
+          <Link href="/aaa-weed">AAA+ Weed</Link>
+          <Link href="/aa-weed">AA Weed</Link>
+          <Link href="/budget-weed">Budget Weed</Link>
         </nav>
       </section>
 

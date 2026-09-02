@@ -18,7 +18,13 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: "/shop", destination: "/menu", permanent: true },
-      { source: "/menu/flower", destination: "/exotic", permanent: true },
+      { source: "/menu/flower", destination: "/exotic-weed", permanent: true },
+      { source: "/exotic", destination: "/exotic-weed", permanent: true },
+      { source: "/premium", destination: "/premium-weed", permanent: true },
+      { source: "/aaa", destination: "/aaa-weed", permanent: true },
+      { source: "/aa", destination: "/aa-weed", permanent: true },
+      { source: "/budget", destination: "/budget-weed", permanent: true },
+      { source: "/info/cheap-weed-york", destination: "/resources/weed-flower-guide", permanent: true },
       { source: "/menu/pre-rolls", destination: "/items/prerolls", permanent: true },
       { source: "/menu/edibles", destination: "/items/edibles", permanent: true },
       { source: "/menu/vapes", destination: "/items/vape-disposables", permanent: true },

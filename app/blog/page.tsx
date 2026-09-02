@@ -28,9 +28,16 @@ export default function BlogPage() {
       </header>
 
       <section className={styles.grid}>
-        {SEO_PAGES.map((post, index) => (
+        <Link href="/resources/weed-flower-guide" className={styles.card}>
+          <span className={styles.number}>01</span>
+          <span className={styles.icon} aria-hidden="true">🌿</span>
+          <h2>Queensway Cannabis Dispensary Weed &amp; Flower Guide</h2>
+          <p>Compare five Weed flower collections in Etobicoke.</p>
+          <strong>Read guide →</strong>
+        </Link>
+        {SEO_PAGES.filter((post) => post.slug !== "cheap-weed-york").map((post, index) => (
           <Link href={`/info/${post.slug}`} className={styles.card} key={post.slug}>
-            <span className={styles.number}>{String(index + 1).padStart(2, "0")}</span>
+            <span className={styles.number}>{String(index + 2).padStart(2, "0")}</span>
             <span className={styles.icon} aria-hidden="true">{post.icon}</span>
             <h2>{post.h1}</h2>
             <p>{post.heroTagline}</p>

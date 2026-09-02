@@ -20,11 +20,13 @@ export default function Footer() {
         <div className={styles.column}>
           <h2>Browse</h2>
           <Link href="/menu">Full menu</Link>
-          <Link href="/exotic">Flower</Link>
+          <Link href="/exotic-weed">Weed flower</Link>
           <Link href="/items/prerolls">Pre-rolls</Link>
           <Link href="/items/edibles">Edibles</Link>
-          <Link href="/items/vape-disposables">Vapes</Link>
+          <Link href="/items/vape-disposables">THC Vape</Link>
+          <Link href="/items/vapes">Nicotine Vape</Link>
           <Link href="/items/concentrates">Concentrates</Link>
+          <Link href="/resources/weed-flower-guide">Weed &amp; flower guide</Link>
         </div>
 
         <div className={styles.column}>

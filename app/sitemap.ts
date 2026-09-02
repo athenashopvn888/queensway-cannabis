@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/delivery`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE}/resources/weed-flower-guide`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/games`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
   ];
 
@@ -49,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   /* SEO landing pages */
-  const seoPages: MetadataRoute.Sitemap = SEO_PAGES.map((p) => ({
+  const seoPages: MetadataRoute.Sitemap = SEO_PAGES.filter((p) => p.slug !== "cheap-weed-york").map((p) => ({
     url: `${BASE}/info/${p.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
