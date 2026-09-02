@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Cannabis Arcade Games — Queensway Cannabis Dispensary | Etobicoke",
   description: "Play free online cannabis-themed games like Flappy Bud and Snake Munchies while you wait at Queensway Cannabis Dispensary.",
   alternates: {
-    canonical: "https://queenswaycannabisdispensary.com/games",
+    canonical: "https://www.queenswaycannabisdispensary.com/games",
   },
 };
 

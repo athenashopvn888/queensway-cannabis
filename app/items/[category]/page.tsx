@@ -38,7 +38,7 @@ export async function generateMetadata({
     },
     description: catInfo.config.seoIntro || `Shop ${items.length} ${catInfo.config.name.toLowerCase()} at Queensway Cannabis Dispensary.`,
     alternates: {
-      canonical: `https://queenswaycannabisdispensary.com/items/${catSlug}`,
+      canonical: `https://www.queenswaycannabisdispensary.com/items/${catSlug}`,
     },
   };
 }
