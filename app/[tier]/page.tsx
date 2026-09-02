@@ -27,18 +27,21 @@ export async function generateMetadata({
   const { tier: tierSlug } = await params;
   const tierInfo = getTierFromSlug(tierSlug);
   if (!tierInfo) return {};
-  const flowers = getFlowersByTier(tierInfo.key);
   const seo = TIER_SEO[tierInfo.key];
 
   return {
-    title: seo?.seoTitle || `${tierInfo.config.name} Cannabis Flower — ${flowers.length} Strains`,
-    description: seo?.seoIntro || `Shop ${flowers.length} ${tierInfo.config.name.toLowerCase()} cannabis strains at Queensway Cannabis Dispensary.`,
+    title: {
+      absolute:
+        seo?.seoTitle ||
+        `${tierInfo.config.name} & Cannabis Flower Etobicoke | Queensway Cannabis Dispensary`,
+    },
+    description: seo?.seoIntro || `Explore ${tierInfo.config.name} at Queensway Cannabis Dispensary in Etobicoke.`,
     alternates: {
       canonical: `https://queenswaycannabisdispensary.com/${tierSlug}`,
     },
     openGraph: {
-      title: `${tierInfo.config.name} Flower | Queensway Cannabis Dispensary`,
-      description: `${flowers.length} curated ${tierInfo.config.name.toLowerCase()} strains in stock now. From $${tierInfo.config.unitPrice}/g.`,
+      title: seo?.seoTitle || `${tierInfo.config.name} | Queensway Cannabis Dispensary`,
+      description: seo?.seoIntro || `Explore ${tierInfo.config.name} at Queensway Cannabis Dispensary in Etobicoke.`,
     },
   };
 }
@@ -91,7 +94,7 @@ export default async function TierPage({
             <div className={styles.heroTitleRow}>
               <span className={styles.heroIcon}>{config.icon}</span>
               <h1 className={styles.heroTitle}>
-                <span style={{ color: config.color }}>{config.name}</span>
+                <span style={{ color: config.color }}>{seo?.h1 || config.name}</span>
               </h1>
             </div>
             <p className={styles.heroTagline}>{config.tagline}</p>

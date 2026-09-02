@@ -1,0 +1,112 @@
+.page {
+  min-height: 100vh;
+  background: #f7f8f3;
+  color: #141714;
+}
+
+.hero {
+  width: min(100% - 3rem, 1180px);
+  margin: 0 auto;
+  padding: 96px 0 60px;
+}
+
+.hero > p {
+  color: #228849;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 12px 0 24px;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 900;
+  letter-spacing: -0.07em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.hero span {
+  display: block;
+  max-width: 620px;
+  color: #59605a;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.grid {
+  width: min(100% - 3rem, 1180px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  min-height: 310px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(17, 21, 17, 0.16);
+  border-radius: 14px;
+  background: #fff;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  background: #eef8f0;
+}
+
+.number {
+  color: #228849;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.icon {
+  margin: 32px 0 20px;
+  font-size: 34px;
+}
+
+.card h2 {
+  max-width: 520px;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.card p {
+  margin: 14px 0 26px;
+  color: #626a63;
+  line-height: 1.6;
+}
+
+.card strong {
+  margin-top: auto;
+  color: #126b37;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+  .hero,
+  .grid {
+    width: min(100% - 2rem, 1180px);
+  }
+
+  .hero {
+    padding-top: 56px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -31,7 +31,11 @@ export async function generateMetadata({
   const items = getItemsByCategory(catInfo.key);
 
   return {
-    title: catInfo.config.seoTitle || `${catInfo.config.name} — ${items.length} Products`,
+    title: {
+      absolute:
+        catInfo.config.seoTitle ||
+        `${catInfo.config.name} | Queensway Cannabis Dispensary`,
+    },
     description: catInfo.config.seoIntro || `Shop ${items.length} ${catInfo.config.name.toLowerCase()} at Queensway Cannabis Dispensary.`,
     alternates: {
       canonical: `https://queenswaycannabisdispensary.com/items/${catSlug}`,
@@ -69,21 +73,26 @@ export default async function ItemsCategoryPage({
 
       {/* Hero Banner */}
       <section style={{ width: "100%", overflow: "hidden", marginTop: "92px", marginBottom: "24px" }}>
-        {config.banner && bannerExists ? (
+        {config.banner && bannerExists && (
           <img
             src={config.banner}
             alt={config.name}
             style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
           />
-        ) : (
-          <div className={styles.heroContent} style={{ background: config.color, padding: "60px 24px", textAlign: "center" }}>
-            <span className={styles.heroIcon}>{config.icon}</span>
-            <h1 className={styles.heroTitle}>
-              <span style={{ color: "#fff" }}>{config.name}</span>
-            </h1>
-            <p className={styles.heroSub} style={{ color: "rgba(255,255,255,0.8)" }}>{items.length} products available</p>
-          </div>
         )}
+      </section>
+
+      <section
+        className={styles.heroContent}
+        style={{ background: config.color, padding: "32px 24px", textAlign: "center" }}
+      >
+        <span className={styles.heroIcon}>{config.icon}</span>
+        <h1 className={styles.heroTitle}>
+          <span style={{ color: "#fff" }}>{config.name}</span>
+        </h1>
+        <p className={styles.heroSub} style={{ color: "rgba(255,255,255,0.9)" }}>
+          {config.seoIntro}
+        </p>
       </section>
 
       {/* Product Grid */}
@@ -128,7 +137,7 @@ export default async function ItemsCategoryPage({
           <div className={styles.visitCta}>
             <h3 className={styles.visitTitle}>Visit Queensway Cannabis Dispensary</h3>
             <p className={styles.visitText}>
-              1174 The Queensway, Etobicoke, ON M8Z 1R5 · Open Daily: 10:00 AM - 12:00 AM
+              1174 The Queensway, Etobicoke, ON M8Z 1R5 · Open 24 Hours
             </p>
           </div>
         </div>

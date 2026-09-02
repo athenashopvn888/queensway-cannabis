@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { TIER_CONFIG, CATEGORY_CONFIG, allFlowers, allItems } from "./lib/products";
 import { SEO_PAGES } from "./lib/seoPages";
 
-const BASE = "https://www.queenswaycannabisdispensary.com";
+const BASE = "https://queenswaycannabisdispensary.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();
@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/delivery`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE}/resources/weed-flower-guide`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/games`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
   ];
 
@@ -49,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   /* SEO landing pages */
-  const seoPages: MetadataRoute.Sitemap = SEO_PAGES.map((p) => ({
+  const seoPages: MetadataRoute.Sitemap = SEO_PAGES.filter((p) => p.slug !== "cheap-weed-york").map((p) => ({
     url: `${BASE}/info/${p.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
@@ -57,6 +58,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
 
-  return [...staticPages, ...tierPages, ...itemPages, ...flowerPages, ...itemDetailPages, ...seoPages];
+  const pages = [...staticPages, ...tierPages, ...itemPages, ...flowerPages, ...itemDetailPages, ...seoPages];
+  return Array.from(new Map(pages.map((page) => [page.url, page])).values());
 }
-
