@@ -13,7 +13,7 @@ const required = new Map([
   ["app/items/[category]/page.tsx", ["Open 24 Hours"]],
   ["app/tv/page.tsx", ['"Open 24 Hours"']],
   ["app/tv2/page.tsx", ['"Open 24 Hours"']],
-  ["public/takeover/index.html", ['window.QCD_HOURS={"open":0,"close":1440}', "Open Daily 24 HOURS"]],
+  ["public/takeover/index.html", ['window.QCD_HOURS={"open":0,"close":1440}', "Open Daily 24 HOURS", '"@type":"Store"', '"openingHoursSpecification"', '"opens":"00:00"', '"closes":"23:59"']],
   ["public/wp-content/themes/queensway/assets/app.js", ["OPEN_MIN = Number.isFinite(HOURS.open) ? HOURS.open : 0", "Open 24 hours"]],
 ]);
 
