@@ -130,9 +130,15 @@
   /* ---------- Time-aware store hours (America/Toronto) ----------
      WP: minutes come from window.QCD_HOURS when inlined. */
   var HOURS = window.QCD_HOURS || {};
-  var OPEN_MIN = Number.isFinite(HOURS.open) ? HOURS.open : 10 * 60;
+  var OPEN_MIN = Number.isFinite(HOURS.open) ? HOURS.open : 0;
   var CLOSE_MIN = Number.isFinite(HOURS.close) ? HOURS.close : 24 * 60;
   var OPEN_24_HOURS = OPEN_MIN === 0 && CLOSE_MIN === 24 * 60;
+  function formatHour(minutes) {
+    var hour = Math.floor(minutes / 60) % 24;
+    var suffix = hour < 12 ? " AM" : " PM";
+    var display = hour % 12 || 12;
+    return display + suffix;
+  }
   function torontoMinutes() {
     try {
       var parts = new Intl.DateTimeFormat("en-CA", {
@@ -149,13 +155,13 @@
     if (mins >= OPEN_MIN) {
       var left = CLOSE_MIN - mins;
       return left <= 45
-        ? { open: true, label: "Closes soon · open until midnight" }
-        : { open: true, label: "Open now · until midnight" };
+        ? { open: true, label: "Closes soon · open until " + formatHour(CLOSE_MIN) }
+        : { open: true, label: "Open now · until " + formatHour(CLOSE_MIN) };
     }
     var until = OPEN_MIN - mins;
     return until <= 60
-      ? { open: false, label: "Opens soon · 10 AM" }
-      : { open: false, label: "Closed · opens 10 AM" };
+      ? { open: false, label: "Opens soon · " + formatHour(OPEN_MIN) }
+      : { open: false, label: "Closed · opens " + formatHour(OPEN_MIN) };
   }
   /* Pickup windows for reservations — same Toronto clock, store hours only */
   function pickupWindows() {
@@ -179,12 +185,15 @@
     var start = Math.max(OPEN_MIN, mins + 45);
     var firstH = Math.ceil(start / 60);
     var today = open;
-    if (!today) firstH = 10; /* closed -> tomorrow from open */
+    if (!today) firstH = Math.floor(OPEN_MIN / 60); /* closed -> tomorrow from open */
     for (var h = firstH; h < 24 && opts.length < 7; h++) {
-      if (h < 10) continue;
+      if (h < Math.floor(OPEN_MIN / 60)) continue;
       opts.push({ v: (today ? "today-" : "tmrw-") + h, t: (today ? "Today " : "Tomorrow ") + fmt(h) + "–" + fmt(h + 1) });
     }
-    if (!opts.length) opts.push({ v: "tmrw-10", t: "Tomorrow 10 AM–11 AM" });
+    if (!opts.length) {
+      var tomorrowHour = Math.floor(OPEN_MIN / 60);
+      opts.push({ v: "tmrw-" + tomorrowHour, t: "Tomorrow " + fmt(tomorrowHour) + "–" + fmt(tomorrowHour + 1) });
+    }
     return opts;
   }
 
