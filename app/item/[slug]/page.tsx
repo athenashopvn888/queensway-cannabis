@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { allItems, CATEGORY_CONFIG, type ItemProduct } from "../../lib/products";
+import { catalogItems, CATEGORY_CONFIG, type ItemProduct } from "../../lib/products";
 import { getItemData } from "../../lib/itemData";
 import Magnifier from "../../components/Magnifier";
 import styles from "../../flower/[slug]/flower.module.css";
 
 /* -- Pre-generate all item pages -- */
 export function generateStaticParams() {
-  return allItems.map((i) => ({ slug: i.slug }));
+  return catalogItems.map((i) => ({ slug: i.slug }));
 }
 
 /* -- SEO metadata per item -- */
@@ -20,7 +20,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const item = allItems.find((i) => i.slug === slug);
+  const item = catalogItems.find((i) => i.slug === slug);
   if (!item) return {};
 
   const itemData = getItemData(item.category, item.name);
@@ -118,7 +118,7 @@ export default async function ItemPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const item = allItems.find((i) => i.slug === slug);
+  const item = catalogItems.find((i) => i.slug === slug);
   if (!item) notFound();
 
   const catInfo = Object.values(CATEGORY_CONFIG).find(c => c.name.toUpperCase() === item.category.toUpperCase() || c.name === item.category);

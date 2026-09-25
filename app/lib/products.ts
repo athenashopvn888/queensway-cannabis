@@ -36,9 +36,14 @@ export interface ItemProduct {
 /* ── Data imports (static fallback) ── */
 import flowersJson from "./flowers.json";
 import itemsJson from "./items.json";
+import urlCatalog from "./url-catalog.json";
 
 export const allFlowers: FlowerProduct[] = flowersJson as FlowerProduct[];
 export const allItems: ItemProduct[] = itemsJson as ItemProduct[];
+
+/* Published product URLs: current ONHAND menu plus slugs already on the site. */
+export const catalogFlowers: FlowerProduct[] = urlCatalog.flowers as FlowerProduct[];
+export const catalogItems: ItemProduct[] = urlCatalog.items as ItemProduct[];
 
 /* ── Live stock fetch from Apps Script ── */
 const APPS_SCRIPT_URL = process.env.APPS_SCRIPT_URL || "";
