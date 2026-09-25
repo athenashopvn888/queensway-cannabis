@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { TIER_CONFIG, CATEGORY_CONFIG, allFlowers, allItems } from "./lib/products";
+import { TIER_CONFIG, CATEGORY_CONFIG, catalogFlowers, catalogItems } from "./lib/products";
 import { SEO_PAGES } from "./lib/seoPages";
 
 const BASE = "https://www.queenswaycannabisdispensary.com";
@@ -34,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   /* Flower detail pages */
-  const flowerPages: MetadataRoute.Sitemap = allFlowers.map((f) => ({
+  const flowerPages: MetadataRoute.Sitemap = catalogFlowers.map((f) => ({
     url: `${BASE}/flower/${f.slug}`,
     lastModified: now,
     changeFrequency: "weekly" as const,
@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   /* Item detail pages */
-  const itemDetailPages: MetadataRoute.Sitemap = allItems.map((i) => ({
+  const itemDetailPages: MetadataRoute.Sitemap = catalogItems.map((i) => ({
     url: `${BASE}/item/${i.slug}`,
     lastModified: now,
     changeFrequency: "weekly" as const,

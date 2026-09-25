@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { allFlowers, TIER_CONFIG, type FlowerProduct, type PricePoint } from "../../lib/products";
+import { allFlowers, catalogFlowers, TIER_CONFIG, type FlowerProduct, type PricePoint } from "../../lib/products";
 import { getStrainData } from "../../lib/strainData";
 import RelatedScroll from "./RelatedScroll";
 import Magnifier from "../../components/Magnifier";
@@ -11,7 +11,7 @@ import styles from "./flower.module.css";
 
 /* -- Pre-generate all flower pages -- */
 export function generateStaticParams() {
-  return allFlowers.map((f) => ({ slug: f.slug }));
+  return catalogFlowers.map((f) => ({ slug: f.slug }));
 }
 
 /* -- SEO metadata per strain -- */
@@ -21,7 +21,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const flower = allFlowers.find((f) => f.slug === slug);
+  const flower = catalogFlowers.find((f) => f.slug === slug);
   if (!flower) return {};
 
   const tierName = TIER_CONFIG[flower.tier]?.name || flower.tier;
@@ -129,7 +129,7 @@ export default async function FlowerPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const flower = allFlowers.find((f) => f.slug === slug);
+  const flower = catalogFlowers.find((f) => f.slug === slug);
   if (!flower) notFound();
 
   const tierConfig = TIER_CONFIG[flower.tier];

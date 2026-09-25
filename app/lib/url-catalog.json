@@ -1,0 +1,2874 @@
+{
+  "storeCode": "QCD01",
+  "stockDate": "2026-09-24T16:35:49.000Z",
+  "onhandSkuCount": 147,
+  "flowers": [
+    {
+      "sku": "539",
+      "name": "PEANUT BUTTER ROCKSTAR",
+      "slug": "peanut-butter-rockstar",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "38%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99258-539-PEANUT-BUTTER-ROCKSTAR.webp"
+    },
+    {
+      "sku": "100",
+      "name": "FUNKY RUNTZ Shreds",
+      "slug": "funky-runtz-shreds",
+      "tier": "BUDGET",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "24%",
+      "price3g": null,
+      "price5g": null,
+      "price14g": null,
+      "price28g": {
+        "regular": 40,
+        "sale": null
+      },
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/101-bubba-kush-cannabis-shake.jpg"
+    },
+    {
+      "sku": "102",
+      "name": "BANANA KUSH Shreds",
+      "slug": "banana-kush-shreds",
+      "tier": "BUDGET",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "24%",
+      "price3g": null,
+      "price5g": null,
+      "price14g": null,
+      "price28g": {
+        "regular": 40,
+        "sale": null
+      },
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/102-Banana-Kush-Shake.jpg"
+    },
+    {
+      "sku": "104",
+      "name": "NUKEN Shreds",
+      "slug": "nuken-shreds",
+      "tier": "BUDGET",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "24%",
+      "price3g": null,
+      "price5g": null,
+      "price14g": null,
+      "price28g": {
+        "regular": 40,
+        "sale": null
+      },
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/104-Nuken-weed-Shake.jpg"
+    },
+    {
+      "sku": "212",
+      "name": "BLACK JACK KUSH",
+      "slug": "black-jack-kush",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "28%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/212-BLACKJACK-KUSH.webp"
+    },
+    {
+      "sku": "213",
+      "name": "MASTER KUSH",
+      "slug": "master-kush",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "27%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/213-Master-Kush.webp"
+    },
+    {
+      "sku": "261",
+      "name": "DAYDREAM DIESEL",
+      "slug": "daydream-diesel",
+      "tier": "AA",
+      "type": "sativa",
+      "isHot": false,
+      "isSale": false,
+      "thc": "29%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/261-DAYDREAM-DIESEL-99140.jpg"
+    },
+    {
+      "sku": "268",
+      "name": "ICECREAM CAKE",
+      "slug": "icecream-cake",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "28%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99144268ICECREAMCAKE.webp"
+    },
+    {
+      "sku": "269",
+      "name": "OREO COOKIES",
+      "slug": "oreo-cookies",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "29%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99149-OREO-COOKIES.webp"
+    },
+    {
+      "sku": "271",
+      "name": "DANTE INFERNO",
+      "slug": "dante-inferno",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "29%",
+      "price3g": null,
+      "price5g": null,
+      "price14g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99146-271-DANTE-INFERNO.webp"
+    },
+    {
+      "sku": "272",
+      "name": "SKYWALKER KUSH",
+      "slug": "skywalker-kush",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "29%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99151-272-SKYWALKER-KUSH.webp"
+    },
+    {
+      "sku": "275",
+      "name": "SUGAR COOKIES",
+      "slug": "sugar-cookies",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "29%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99244-275-SUGAR-COOKIES.webp"
+    },
+    {
+      "sku": "289",
+      "name": "JUNGLE JUICE",
+      "slug": "jungle-juice",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": true,
+      "thc": "28%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": 15
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99230-289-JUNGLE-JUICE.webp"
+    },
+    {
+      "sku": "290",
+      "name": "SWEET KUSH",
+      "slug": "sweet-kush",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "28%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99263-290-SWEET-KUSH.webp"
+    },
+    {
+      "sku": "291",
+      "name": "DIAMOND OG",
+      "slug": "diamond-og",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "29%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/291-DIAMOND-KUSH.webp"
+    },
+    {
+      "sku": "293",
+      "name": "VANILLA ICE KUSH",
+      "slug": "vanilla-ice-kush",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "29%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/293-VANILLA-ICE-KUSH.webp"
+    },
+    {
+      "sku": "319",
+      "name": "WHITE WALKER OG",
+      "slug": "white-walker-og",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 70,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99261-319-WHITEWALKEROG.webp"
+    },
+    {
+      "sku": "321",
+      "name": "MK ULTRA",
+      "slug": "mk-ultra",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99269-MK-ULTRA-321.webp"
+    },
+    {
+      "sku": "333",
+      "name": "PINK PABLO",
+      "slug": "pink-pablo",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": {
+        "regular": 70,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/333-PINK-PABLO.webp"
+    },
+    {
+      "sku": "339",
+      "name": "PURPLE PUNCH",
+      "slug": "purple-punch",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 70,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99296-PURPLE-PUNCH-339.webp"
+    },
+    {
+      "sku": "340",
+      "name": "FROZEN GRAPES",
+      "slug": "frozen-grapes",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 70,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99298-FROZEN-GRAPES-340.webp"
+    },
+    {
+      "sku": "341",
+      "name": "MENDO KUSH",
+      "slug": "mendo-kush",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 70,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99299-MENDO-KUSH-341.webp"
+    },
+    {
+      "sku": "342",
+      "name": "PINK PHAROAH",
+      "slug": "pink-pharoah",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": null,
+      "price5g": null,
+      "price14g": {
+        "regular": 70,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99295-PINK-PHAROAH.webp"
+    },
+    {
+      "sku": "369",
+      "name": "NORTHERN LIGHTS",
+      "slug": "northern-lights",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/369-NORTHERN-LIGHTS-99131.jpg"
+    },
+    {
+      "sku": "392",
+      "name": "RAINBOW KUSH",
+      "slug": "rainbow-kush",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": true,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": 10
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": 20
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/393-PINK-KUSH-99212.webp"
+    },
+    {
+      "sku": "393",
+      "name": "PINK KUSH",
+      "slug": "pink-kush",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 70,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/393-PINK-KUSH-99212.webp"
+    },
+    {
+      "sku": "396",
+      "name": "KHALIFA KUSH",
+      "slug": "khalifa-kush",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": true,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": 10
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": 20
+      },
+      "price14g": {
+        "regular": 70,
+        "sale": 40
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/396-DURIAN-99219.webp"
+    },
+    {
+      "sku": "415",
+      "name": "DEATH VALLEY",
+      "slug": "death-valley",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 95,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99254-415-DEATH-VALLEY.webp"
+    },
+    {
+      "sku": "416",
+      "name": "PINK DEATH",
+      "slug": "pink-death",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 95,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99266-415-PINK-DEATH.webp"
+    },
+    {
+      "sku": "471",
+      "name": "POISON IVY",
+      "slug": "poison-ivy",
+      "tier": "PREMIUM",
+      "type": "sativa",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99152-471-POISON-IVY.webp"
+    },
+    {
+      "sku": "472",
+      "name": "PINK BAZOOKA",
+      "slug": "pink-bazooka",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99203-472-PINK-BAZOOKA.webp"
+    },
+    {
+      "sku": "477",
+      "name": "PINK ROCK STAR",
+      "slug": "pink-rock-star",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "33%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/477-PINK-ROCK-STAR-99208.webp"
+    },
+    {
+      "sku": "480",
+      "name": "LEMON CHERRY GELATO",
+      "slug": "lemon-cherry-gelato",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/480-Lemon-Cherry-Gelato.webp"
+    },
+    {
+      "sku": "481",
+      "name": "PINK PANTIES",
+      "slug": "pink-panties",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99235-481-PINK-PANTIES.webp"
+    },
+    {
+      "sku": "482",
+      "name": "MENDO BREATHE",
+      "slug": "mendo-breathe",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99238-482-MENDO-BREATHE.webp"
+    },
+    {
+      "sku": "484",
+      "name": "PINK CHAPO",
+      "slug": "pink-chapo",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": null,
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99246-484-PINK-CHAPO.webp"
+    },
+    {
+      "sku": "492",
+      "name": "PLATINUM TUNA",
+      "slug": "platinum-tuna",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/492-PLATINUM-TUNA.webp"
+    },
+    {
+      "sku": "493",
+      "name": "O PINK",
+      "slug": "o-pink",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "33%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/493-O-PINK.webp"
+    },
+    {
+      "sku": "494",
+      "name": "PINK ATOMIC BOMB",
+      "slug": "pink-atomic-bomb",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "33%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/494-PINK-ATOMIC-BOMB.webp"
+    },
+    {
+      "sku": "504",
+      "name": "PINK BELLAGIO",
+      "slug": "pink-bellagio",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "36%",
+      "price3g": null,
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99205-504PINK-BELLAGIO.webp"
+    },
+    {
+      "sku": "513",
+      "name": "PINK TOMFORD",
+      "slug": "pink-tomford",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "38%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 140,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99240-513-PINK-TOMFORD.webp"
+    },
+    {
+      "sku": "514",
+      "name": "PINK PERMANENT MARKER",
+      "slug": "pink-permanent-marker",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "35%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/544-PINK-PERMANENT-MARKER.webp"
+    },
+    {
+      "sku": "515",
+      "name": "PURE MICHIGAN",
+      "slug": "pure-michigan",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "35%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 140,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/545-PURE-MICHIGAN.webp"
+    },
+    {
+      "sku": "537",
+      "name": "GODFATHER OG",
+      "slug": "godfather-og",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "38%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99139537-GODFATHER-OG.webp"
+    },
+    {
+      "sku": "550",
+      "name": "PINK STARKILLER",
+      "slug": "pink-starkiller",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": true,
+      "thc": "35%",
+      "price3g": {
+        "regular": 40,
+        "sale": 30
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": 45
+      },
+      "price14g": {
+        "regular": 140,
+        "sale": 95
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/550-PINK-STARKILLER.webp"
+    },
+    {
+      "sku": "496",
+      "name": "RED CONGOLESE",
+      "slug": "red-congolese",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/496RedCongolese.webp"
+    },
+    {
+      "sku": "593",
+      "name": "MIKE TYSON KO *SUPER EXOTICS*",
+      "slug": "mike-tyson-ko-super-exotics",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "39%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/593-MIKE-TYSON-KO-99138.jpg"
+    },
+    {
+      "sku": "595",
+      "name": "PURPLE SPACE QUEEN",
+      "slug": "purple-space-queen",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "38%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 140,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99224-595-PURPLE-SPACE-QUEEN.webp"
+    },
+    {
+      "sku": "596",
+      "name": "PINK GOOEY FROST",
+      "slug": "pink-gooey-frost",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": true,
+      "thc": "39%",
+      "price3g": {
+        "regular": 40,
+        "sale": 30
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": 45
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/596-PINK-GOEY-FROST2.webp"
+    },
+    {
+      "sku": "207",
+      "name": "GOD GREEN CRACK",
+      "slug": "god-green-crack",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "27%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 50,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/207_GOD_GREEN_CRACK_showcase_600x600.webp"
+    },
+    {
+      "sku": "209",
+      "name": "SUPER LEMON HAZE",
+      "slug": "super-lemon-haze",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "28%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 50,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/209_super_lemon_haze_showcase_600x600.webp"
+    },
+    {
+      "sku": "347",
+      "name": "PINK JEFE",
+      "slug": "pink-jefe",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 70,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/347PINKJEFE.webp"
+    },
+    {
+      "sku": "355",
+      "name": "ICE WINE",
+      "slug": "ice-wine",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 70,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/355ICEWINE.webp"
+    },
+    {
+      "sku": "410",
+      "name": "PINEAPPLE HAZE",
+      "slug": "pineapple-haze",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/410PineappleHaze.webp"
+    },
+    {
+      "sku": "348",
+      "name": "PINK SKYWALKER",
+      "slug": "pink-skywalker",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 70,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/348PINKSKYWALKER.webp"
+    },
+    {
+      "sku": "184",
+      "name": "APPLE KUSH",
+      "slug": "apple-kush",
+      "tier": "BUDGET",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "26%",
+      "price3g": {
+        "regular": 10,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": {
+        "regular": 50,
+        "sale": null
+      },
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/184_APPLE_KUSH_showcase_600x600.webp"
+    },
+    {
+      "sku": "185",
+      "name": "HALIE BERRY (S)",
+      "slug": "halie-berry-s",
+      "tier": "BUDGET",
+      "type": "sativa",
+      "isHot": false,
+      "isSale": false,
+      "thc": "26%",
+      "price3g": {
+        "regular": 10,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": {
+        "regular": 50,
+        "sale": null
+      },
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/185_HALIE_BERRY_S_showcase_600x600.webp"
+    },
+    {
+      "sku": "186",
+      "name": "HOLLYWOOD KUSH",
+      "slug": "hollywood-kush",
+      "tier": "BUDGET",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "26%",
+      "price3g": {
+        "regular": 10,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/186_HOLLYWOOD_KUSH_showcase_600x600.webp"
+    },
+    {
+      "sku": "187",
+      "name": "CHOCOLATE KUSH",
+      "slug": "chocolate-kush",
+      "tier": "BUDGET",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "26%",
+      "price3g": {
+        "regular": 10,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": {
+        "regular": 50,
+        "sale": null
+      },
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/187_CHOCOLATE_KUSH.webp"
+    },
+    {
+      "sku": "422",
+      "name": "WORLD CUP KUSH",
+      "slug": "world-cup-kush",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": true,
+      "thc": "33%",
+      "price3g": {
+        "regular": 30,
+        "sale": 20
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": 30
+      },
+      "price14g": {
+        "regular": 95,
+        "sale": 70
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/422_WORLD_CUP_KUSH_(SALE).webp"
+    },
+    {
+      "sku": "105",
+      "name": "SPACE COOKIES (SHREDS)",
+      "slug": "space-cookies-shreds",
+      "tier": "BUDGET",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "24%",
+      "price3g": null,
+      "price5g": null,
+      "price14g": null,
+      "price28g": {
+        "regular": 40,
+        "sale": null
+      },
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/105_SPACE_COOKIES_(SHREDS).webp"
+    },
+    {
+      "sku": "106",
+      "name": "GRANDADDY PURPLE (SHREDS)",
+      "slug": "grandaddy-purple-shreds",
+      "tier": "BUDGET",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "24%",
+      "price3g": null,
+      "price5g": null,
+      "price14g": null,
+      "price28g": {
+        "regular": 40,
+        "sale": null
+      },
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/106_GRANDADDY_PURPLE_(SHREDS).webp"
+    },
+    {
+      "sku": "107",
+      "name": "NORTHERN LIGHTS (SHREDS)",
+      "slug": "northern-lights-shreds",
+      "tier": "BUDGET",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "24%",
+      "price3g": null,
+      "price5g": null,
+      "price14g": null,
+      "price28g": {
+        "regular": 40,
+        "sale": null
+      },
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/107_NORTHERN_LIGHTS_(SHREDS).webp"
+    },
+    {
+      "sku": "172",
+      "name": "LAVENDER KUSH",
+      "slug": "lavender-kush",
+      "tier": "BUDGET",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "26%",
+      "price3g": {
+        "regular": 10,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": {
+        "regular": 50,
+        "sale": null
+      },
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/172-LAVENDER-KUSH-SHOWCASE.webp"
+    },
+    {
+      "sku": "204",
+      "name": "ROYAL GORILLA",
+      "slug": "royal-gorilla",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "29%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/204-ROYAL-GORILLA2.webp"
+    },
+    {
+      "sku": "205",
+      "name": "PINK STICKY ALIEN",
+      "slug": "pink-sticky-alien",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "29%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/205-PINK-STICKY-ALIEN.webp"
+    },
+    {
+      "sku": "215",
+      "name": "GRAPE FRUIT (S)",
+      "slug": "grape-fruit-s",
+      "tier": "AA",
+      "type": "sativa",
+      "isHot": false,
+      "isSale": true,
+      "thc": "28%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": 15
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": 40
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/370_BLUEBERRY_JUNKY.webp"
+    },
+    {
+      "sku": "216",
+      "name": "PURPLE DRAGON (S)",
+      "slug": "purple-dragon-s",
+      "tier": "AA",
+      "type": "sativa",
+      "isHot": false,
+      "isSale": false,
+      "thc": "28%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/216_PURPLE_DRAGON_(S).webp"
+    },
+    {
+      "sku": "278",
+      "name": "SLURRICANE",
+      "slug": "slurricane",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "27%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/278-SLURRICANE.webp"
+    },
+    {
+      "sku": "310",
+      "name": "MASTER KUSH (AAA+)",
+      "slug": "master-kush-aaa",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99349_310_MASTER_KUSH.webp"
+    },
+    {
+      "sku": "376",
+      "name": "OG KUSH (AAA+)",
+      "slug": "og-kush-aaa",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": true,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": 15
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": 25
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/376_OG_KUSH_600x600.webp"
+    },
+    {
+      "sku": "408",
+      "name": "ESCOBAR PINK GAS",
+      "slug": "escobar-pink-gas",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": null,
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/408_PINK_ESCOBAR_showcase_600x600.webp"
+    },
+    {
+      "sku": "409",
+      "name": "PINK ROYAL",
+      "slug": "pink-royal",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/409-black-mamba-showcase-600.webp"
+    },
+    {
+      "sku": "417",
+      "name": "DEATH STAR BUBBA",
+      "slug": "death-star-bubba",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "33%",
+      "price3g": null,
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/417-DEATH-STAR-BUBBA.webp"
+    },
+    {
+      "sku": "420",
+      "name": "CHOCOLATE CHIP COOKIES (S)",
+      "slug": "chocolate-chip-cookies-s",
+      "tier": "PREMIUM",
+      "type": "sativa",
+      "isHot": false,
+      "isSale": false,
+      "thc": "33%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/420_CHOCOLATE_CHIP_COOKIES_(S).webp"
+    },
+    {
+      "sku": "421",
+      "name": "PINK GUCCI DEATH",
+      "slug": "pink-gucci-death",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/421_PINK_GUCCI_DEATH.webp"
+    },
+    {
+      "sku": "424",
+      "name": "CRACK PINK",
+      "slug": "crack-pink",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/424_CRACK_PINK.webp"
+    },
+    {
+      "sku": "495",
+      "name": "KING LOUIS XIII",
+      "slug": "king-louis-xiii",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "33%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/495-KING-LOUIS-XIII.webp"
+    },
+    {
+      "sku": "542",
+      "name": "PINK VELVET",
+      "slug": "pink-velvet",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "39%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/505-542PINK-VELVET.webp"
+    },
+    {
+      "sku": "563",
+      "name": "PURPLE SKUNK",
+      "slug": "purple-skunk",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "35%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99265-563-PURPLE-SKUNK.webp"
+    },
+    {
+      "sku": "572",
+      "name": "TEQUILA SUNRISE (S)",
+      "slug": "tequila-sunrise-s",
+      "tier": "EXOTIC",
+      "type": "sativa",
+      "isHot": false,
+      "isSale": false,
+      "thc": "36%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/572_TEQUILA_SUNRISE_(S).webp"
+    },
+    {
+      "sku": "218",
+      "name": "GIRL SCOUT COOKIES",
+      "slug": "girl-scout-cookies",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "28%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/99243-288-FROSTED-COOKIES.webp"
+    },
+    {
+      "sku": "220",
+      "name": "GORILLA GLUE 4",
+      "slug": "gorilla-glue-4",
+      "tier": "AA",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "28%",
+      "price3g": null,
+      "price5g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price14g": {
+        "regular": 50,
+        "sale": null
+      },
+      "price28g": null,
+      "image": ""
+    },
+    {
+      "sku": "305",
+      "name": "PINK FIRE OG",
+      "slug": "pink-fire-og",
+      "tier": "AAA+",
+      "type": "sativa",
+      "isHot": false,
+      "isSale": false,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": ""
+    },
+    {
+      "sku": "313",
+      "name": "TENTH PLANET",
+      "slug": "tenth-planet",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/313_TENTH_PLANET_showcase.webp"
+    },
+    {
+      "sku": "314",
+      "name": "PINK ROCKSTAR",
+      "slug": "pink-rockstar",
+      "tier": "AAA+",
+      "type": "sativa",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": ""
+    },
+    {
+      "sku": "335",
+      "name": "DONKEY BUTTER",
+      "slug": "donkey-butter",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "30%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/335_DONKEY_BUTTER_showcase.webp"
+    },
+    {
+      "sku": "337",
+      "name": "GOLDEN GAS",
+      "slug": "golden-gas",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/337_GOLDEN_GAS_showcase.webp"
+    },
+    {
+      "sku": "353",
+      "name": "PINK PANTHER",
+      "slug": "pink-panther",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/353_PINK_PANTHER_showcase.webp"
+    },
+    {
+      "sku": "367",
+      "name": "GREY GOOSE",
+      "slug": "grey-goose",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/367_GREY_GOOSE_showcase.webp"
+    },
+    {
+      "sku": "379",
+      "name": "PINK MANGOO",
+      "slug": "pink-mangoo",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/379_PINK_MANGOO_showcase.webp"
+    },
+    {
+      "sku": "390",
+      "name": "SUPER PINK MARIO",
+      "slug": "super-pink-mario",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": null,
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/390-PINK-SUPER-MARIO-SHOWCASE.webp"
+    },
+    {
+      "sku": "395",
+      "name": "PINK ODYSSEY",
+      "slug": "pink-odyssey",
+      "tier": "AAA+",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "31%",
+      "price3g": {
+        "regular": 20,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/395-PINK-ODYSSEY-SHOWCASE.webp"
+    },
+    {
+      "sku": "400",
+      "name": "ISLAND PINK",
+      "slug": "island-pink",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/400_ISLAND_PINK_showcase.webp"
+    },
+    {
+      "sku": "403",
+      "name": "PINK DIESEL",
+      "slug": "pink-diesel",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://farmerslink.ca/wp-content/uploads/2024/07/403-PINK-DIESEL-SHOWCASE.webp"
+    },
+    {
+      "sku": "404",
+      "name": "REAPER DEATH PINK",
+      "slug": "reaper-death-pink",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://farmerslink.ca/wp-content/uploads/2024/09/404-REAPER-DEATH-PINK-SHOWCASE.webp"
+    },
+    {
+      "sku": "499",
+      "name": "NEW BLACK MAMBA (AAAA+)",
+      "slug": "new-black-mamba-aaaa",
+      "tier": "PREMIUM",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "32%",
+      "price3g": {
+        "regular": 30,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 45,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/499-BLACK-MAMA-SHOWCASE.webp"
+    },
+    {
+      "sku": "508",
+      "name": "PINK STAR",
+      "slug": "pink-star",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "36%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://farmerslink.ca/wp-content/uploads/2025/02/508-PINK-STAR-SHOWCASE.webp"
+    },
+    {
+      "sku": "509",
+      "name": "JEDI PINK",
+      "slug": "jedi-pink",
+      "tier": "EXOTIC",
+      "type": "indica",
+      "isHot": false,
+      "isSale": false,
+      "thc": "",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://farmerslink.ca/wp-content/uploads/2026/08/509-JEDI-PINK-SHOWCASE-v2.webp"
+    },
+    {
+      "sku": "551",
+      "name": "DEVIL DRIVER",
+      "slug": "devil-driver",
+      "tier": "EXOTIC",
+      "type": "sativa",
+      "isHot": false,
+      "isSale": false,
+      "thc": "36%",
+      "price3g": {
+        "regular": 40,
+        "sale": null
+      },
+      "price5g": {
+        "regular": 60,
+        "sale": null
+      },
+      "price14g": null,
+      "price28g": null,
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/551-devil-driver-stv-showcase-600.webp"
+    }
+  ],
+  "items": [
+    {
+      "sku": "1005",
+      "name": "CANADIAN LIGHTS",
+      "slug": "canadian-lights",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1005-CANADIAN-LIGHTS.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1006",
+      "name": "CANADIAN FULL",
+      "slug": "canadian-full",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1006-CANADIAN-FULL.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1008",
+      "name": "PUTTERS",
+      "slug": "putters",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1008-PUTTERS-FULL.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1011",
+      "name": "CANADIAN GOOSE FULL",
+      "slug": "canadian-goose-full",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1011-CANADIAN-GOOSE.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1012",
+      "name": "CANADIAN GOOSE LIGHTS",
+      "slug": "canadian-goose-lights",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1012-CANADIAN-GOOSE-LIGHTS.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1013",
+      "name": "CANADIAN MENTHOL",
+      "slug": "canadian-menthol",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1013-CANADIAN-MENTHOL.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1014",
+      "name": "CANADIAN CLASSICS ORIGINAL",
+      "slug": "canadian-classics-original",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1014-CANADIAN-CLASSSICS-ORIGINAL.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1015",
+      "name": "CANADIAN CLASSICS SILVER",
+      "slug": "canadian-classics-silver",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1015-CANADIAN-CLASSICS-SILVER.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1016",
+      "name": "* ROLLED GOLD LIGHTS",
+      "slug": "rolled-gold-lights",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1023-ROLLED-GOLD.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1017",
+      "name": "NEXUS FULL",
+      "slug": "nexus-full",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1017-NEXUS-FULL.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "1018",
+      "name": "NEXUS LIGHTS",
+      "slug": "nexus-lights",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1018-NEXUS-LIGHTS.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "1019",
+      "name": "TIME FULL",
+      "slug": "time-full",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1019-TIMES-FULL.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1073",
+      "name": "GEEK MAX – 5% | 20K–30K PUFFS | MANY FLAVORS",
+      "slug": "geek-max-5-20k30k-puffs-many-flavors",
+      "category": "VAPE PENS",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$35",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/GEEKMAX500x500HQ.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "1080",
+      "name": "OVNS 2500 – 5% | 2.5K PUFFS",
+      "slug": "ovns-2500-5-25k-puffs",
+      "category": "VAPE PENS",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$20",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1080-ovns2500.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "1081",
+      "name": "OVNS 10000 – 5% | 10K PUFFS NVape",
+      "slug": "ovns-10000-5-10k-puffs",
+      "category": "VAPE PENS",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$17",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1081OVNS10000.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "1082",
+      "name": "OVNS PIONEER – 5% | 22K PUFFS NVape",
+      "slug": "ovns-pioneer-5-22k-puffs",
+      "category": "VAPE PENS",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$23",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/OVNS_PIONEER_5_22K_PUFFS.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "1084",
+      "name": "OVNS DISPOSABLE – 5% | 8ML | MANY FLAVORS",
+      "slug": "ovns-disposable-5-8ml-many-flavors",
+      "category": "VAPE PENS",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$35",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/OVNS500x500HQ.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "1090",
+      "name": "NEXA PIX | 30K PUFFS | MANY FLAVORS",
+      "slug": "nexa-pix-30k-puffs-many-flavors",
+      "category": "VAPE PENS",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$35",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/nexa_showcase_600x600.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "188",
+      "name": "PINK ANIMAL 1G IND PRE-ROLL",
+      "slug": "pink-animal-1g-ind-pre-roll",
+      "category": "ADD ONS",
+      "type": "IH",
+      "thc": "0.28",
+      "mg": "",
+      "price": "$5",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/pinkanimal.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "189",
+      "name": "AMNESIA HAZE 1G SAT PRE-ROLL",
+      "slug": "amnesia-haze-1g-sat-pre-roll",
+      "category": "ADD ONS",
+      "type": "SH",
+      "thc": "0.28",
+      "mg": "",
+      "price": "$5",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/amnesiahaze.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "231, 232",
+      "name": "SHATTER BAR 500mg Indica / Sativa",
+      "slug": "shatter-bar-500mg-indica-sativa",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "500mg",
+      "price": "$40",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/Shatter-Bar.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "240",
+      "name": "GRABBA",
+      "slug": "grabba",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$5",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/GRABBA-2G.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "388",
+      "name": "PINK KUSH 1G IND PR-ROLL",
+      "slug": "pink-kush-1g-ind-pr-roll",
+      "category": "ADD ONS",
+      "type": "IH",
+      "thc": "0.31",
+      "mg": "",
+      "price": "$8",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/laughingbuddha.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "389",
+      "name": "LAUGHING BUDDHA 1G SAT PRE-ROLL",
+      "slug": "laughing-buddha-1g-sat-pre-roll",
+      "category": "ADD ONS",
+      "type": "SH",
+      "thc": "0.31",
+      "mg": "",
+      "price": "$8",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/pinkkush.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "488",
+      "name": "PINK PREDATOR 1G IND PRE-ROLL",
+      "slug": "pink-predator-1g-ind-pre-roll",
+      "category": "ADD ONS",
+      "type": "IH",
+      "thc": "0.33",
+      "mg": "",
+      "price": "$10",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/pinkpredator.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "489",
+      "name": "MAUI WOWIE 1G SAT PRE-ROLL",
+      "slug": "maui-wowie-1g-sat-pre-roll",
+      "category": "ADD ONS",
+      "type": "SH",
+      "thc": "0.33",
+      "mg": "",
+      "price": "$10",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/mauiwowie.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "564, 565, 566",
+      "name": "DANK CHOCO BAR 1500MG",
+      "slug": "dank-choco-bar-1500mg",
+      "category": "CONCENTRATES",
+      "type": "",
+      "thc": "",
+      "mg": "1500mg",
+      "price": "$45",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/564-Dank-Shatter-Bar-Blueberry-1500mg.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "588",
+      "name": "PINK GODFATHER OG 1G IND PRE-ROLL",
+      "slug": "pink-godfather-og-1g-ind-pre-roll",
+      "category": "ADD ONS",
+      "type": "IH",
+      "thc": "0.38",
+      "mg": "",
+      "price": "$12",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/pinkgodfatherog.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "589",
+      "name": "STRAWBERRY COUGH 1G SAT PRE-ROLL",
+      "slug": "strawberry-cough-1g-sat-pre-roll",
+      "category": "ADD ONS",
+      "type": "SH",
+      "thc": "0.38",
+      "mg": "",
+      "price": "$12",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/strawberrycough.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "600, 601",
+      "name": "NRTHRN EXTRACTS GUMMIES",
+      "slug": "nrthrn-extracts-gummies",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "400mg",
+      "price": "$20",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/northernextractgummies400mg.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "613, 614",
+      "name": "STELLAR GUMMIES 1000MG / 2000MG",
+      "slug": "stellar-gummies-1000mg-2000mg",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "1000mg / 2000mg",
+      "price": "$40",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/stellargummies600x600.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "615",
+      "name": "STELLAR GUMMIES 500MG",
+      "slug": "stellar-gummies-500mg",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "500mg",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/615_Stellar500.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "631",
+      "name": "MINDF*CK CHOCO 8000MG",
+      "slug": "mindfck-choco-8000mg",
+      "category": "MAGIC & OTHERS",
+      "type": "",
+      "thc": "",
+      "mg": "8000mg",
+      "price": "$60",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/MindFCK-Psilocybin-Chocolate-8000mg.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "633",
+      "name": "MINDF*CK GUMMIES BAR 5000MG",
+      "slug": "mindfck-gummies-bar-5000mg",
+      "category": "MAGIC & OTHERS",
+      "type": "",
+      "thc": "",
+      "mg": "5000mg",
+      "price": "$35",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/631-Mindfck-Psilocybin-Gummies-Bar-5000mg.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "635, 636",
+      "name": "TRIPNOTIK CHOCO 5000MG",
+      "slug": "tripnotik-choco-5000mg",
+      "category": "MAGIC & OTHERS",
+      "type": "",
+      "thc": "",
+      "mg": "5000mg",
+      "price": "$50",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/635-Triptonik-Milk-Choco.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "637",
+      "name": "TRIPNOTIK GUMMIES 4000MG",
+      "slug": "tripnotik-gummies-4000mg",
+      "category": "MAGIC & OTHERS",
+      "type": "",
+      "thc": "",
+      "mg": "4000mg",
+      "price": "$30",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/Tripnotik-Psilocybin-Gummies.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "643",
+      "name": "SHATTER CHEWS 150 MG",
+      "slug": "shatter-chews-150-mg",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "150mg",
+      "price": "$20",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/Euphoria-Extractions-Shatter-Chews-120mg.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "645, 646",
+      "name": "SHATTER CHEWS 600 MG",
+      "slug": "shatter-chews-600-mg",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "600mg",
+      "price": "$40",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/Euphoria-Extractions-Shatter-Chews-600mg.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "651",
+      "name": "GALAXY GUMMIES 6000MG",
+      "slug": "galaxy-gummies-6000mg",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$40",
+      "image": "",
+      "promoImage": null
+    },
+    {
+      "sku": "655, 656, 657",
+      "name": "KNOCK OUT GUMMIES",
+      "slug": "knock-out-gummies",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "1500mg / 3000mg / 5000mg",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/KnockOutGummies.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "668, 669",
+      "name": "GRABBA SHAKER *RedRose / Red Herring* X2 AVAILABLE",
+      "slug": "grabba-shaker-redrose-red-herring",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$20",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/668_669_670_671_GRABBA_SHAKER.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "701, 702, 706, 707",
+      "name": "BACKWOODS ASSORTED FLAVORS $20-$25",
+      "slug": "backwoods-assorted-flavors-20-25",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$20",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/backwoodsassorted600x600.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "710",
+      "name": "RAW PAPER KING SIZE",
+      "slug": "raw-paper-king-size",
+      "category": "ADD ONS",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$3",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/rawblackkingsizeslimupnsmokeonline580x2xc0c39f81-d3b7-402b-9de1-f73d1f563d49.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "725, 726, 727, 728",
+      "name": "NEW BACKWOODS FLAVORS",
+      "slug": "new-backwoods-flavors",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/new_backwoods_flavor_1x1.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "800",
+      "name": "GAS GANG DISPO THCVape 1G",
+      "slug": "gas-gang-dispo-vape-1g",
+      "category": "VAPE DISPOSABLE",
+      "type": "i/h/s",
+      "thc": "98%+",
+      "mg": "",
+      "price": "$40",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/GasGang.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "803",
+      "name": "2g GAS GANG Vol.3 HYBRID THCVape",
+      "slug": "2g-gas-gang-vol3-hybrid",
+      "category": "VAPE DISPOSABLE",
+      "type": "i/h/s",
+      "thc": "98%+",
+      "mg": "",
+      "price": "$50",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/gasgang2gvol3assorted.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "813",
+      "name": "DRIZZLE SWITCH 3in1 / 2G THCVape",
+      "slug": "drizzle-switch-3in1-2g",
+      "category": "VAPE DISPOSABLE",
+      "type": "i/h/s",
+      "thc": "98%+",
+      "mg": "",
+      "price": "$50",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/DRIZZLESWITCH2GASSORTEDFLAVORS600x600.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "861",
+      "name": "GRAND CANNABIS- STAR HASH , AFGHAN, DARK VADER",
+      "slug": "grand-cannabis-star-hash-afghan-dark-vader",
+      "category": "CONCENTRATES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$40",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/GrandCannabis.png",
+      "promoImage": null
+    },
+    {
+      "sku": "868",
+      "name": "*NEW* AFGHAN HASH",
+      "slug": "new-afghan-hash",
+      "category": "CONCENTRATES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/Afghan-Hash.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "920",
+      "name": "DEADLY MOONROCK PREROLL",
+      "slug": "deadly-moonrock-preroll",
+      "category": "PREROLLS",
+      "type": "i/h/s",
+      "thc": "50%+",
+      "mg": "",
+      "price": "$20",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/920-DEADLY-PREROLL.png",
+      "promoImage": null
+    },
+    {
+      "sku": "932, 933",
+      "name": "KNOCK OUT *INFUSED* PREROLLS x2 each",
+      "slug": "knock-out-infused-prerolls-x2-each",
+      "category": "PREROLLS",
+      "type": "i/h/s",
+      "thc": "0.33",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/e42b5a7c-28f1-4378-b89a-107df2ee4e12.png",
+      "promoImage": null
+    },
+    {
+      "sku": "945, 946, 947",
+      "name": "MOONROCKETS HYB, IND, SAT",
+      "slug": "moonrockets-hyb-ind-sat",
+      "category": "PREROLLS",
+      "type": "",
+      "thc": "90%+",
+      "mg": "",
+      "price": "$20",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/moonrockets_showcase_600x600.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "961, 962, 963",
+      "name": "DUMMY BEARS 200MG - 2000MG - 5000MG",
+      "slug": "dummy-bears-200mg-2000mg-5000mg",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$20",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/961-962-963-DUMMY-BEARS.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "965",
+      "name": "GOOBER THC GUMMIES 1000MG",
+      "slug": "goober-thc-gummies-1000mg",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "1000MG",
+      "price": "$30",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/965-GOOBER-THC-GUMMIES-1000MG.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "966",
+      "name": "GOOBER THC CHOCOLATE 1000MG",
+      "slug": "goober-thc-chocolate-1000mg",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "1000MG",
+      "price": "$30",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/966-GOOBER-THC-CHOCOLOATE-1000MG.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "970, 971",
+      "name": "DRINK 50MG / 200MG EUPHORIA EXT",
+      "slug": "drink-50mg-200mg-euphoria-ext",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$15",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/970-971-DRINK-50MG-200MG-EUPHORIA-EXT.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "999",
+      "name": "10 X PREMIUM MIX CIGARETTES",
+      "slug": "10-x-premium-mix-cigarettes",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$3",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/999Cigs.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "1002",
+      "name": "BB FULL CARTON",
+      "slug": "bb-full-carton",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1003-BB-FULL-CARTON.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1000",
+      "name": "BB LIGHTS CARTON",
+      "slug": "bb-lights-carton",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/1001-BB-LIGHTS-CARTONS.webp",
+      "promoImage": "CIG_2_FOR_5"
+    },
+    {
+      "sku": "1072",
+      "name": "GEEK PROMAX – 5% | 30K PUFFS NVape",
+      "slug": "geek-promax-5-30k-puffs-nvape",
+      "category": "VAPE PENS",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$25",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/GEEK-PROMAX.jpg",
+      "promoImage": null
+    },
+    {
+      "sku": "1070",
+      "name": "GEEK UNIVERSE 25k PUFFS NVape",
+      "slug": "geek-universe-25k-puffs-nvape",
+      "category": "VAPE PENS",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$18",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/geek_universe_pulse_x_25k.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "240",
+      "name": "GRABBA RedRose / RedHerring",
+      "slug": "grabba-redrose-redherring",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$5",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/GRABBA-2G.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "680, 682, 683",
+      "name": "LIVE RESIN GUMMIES SOUR IND / SAT in ASSORTED FLAVORS",
+      "slug": "live-resin-gummies-sour-ind-sat-in-assorted-flavors",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "150mg / 600mg",
+      "price": "$16",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/LiveResinGummies.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "842",
+      "name": "PREMIUM 3G GOLD HASH - *CHRRY FRITTER SALE $30*",
+      "slug": "premium-3g-gold-hash-chrry-fritter-sale-30",
+      "category": "CONCENTRATES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$40",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/premium_3gram_gold_hash_selection_600x600.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "691",
+      "name": "Stoner PATCH",
+      "slug": "stoner-patch",
+      "category": "EDIBLES",
+      "type": "",
+      "thc": "",
+      "mg": "1000mg",
+      "price": "$35",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/STONERPATCHTHCSYRUP500x500HQ.webp",
+      "promoImage": null
+    },
+    {
+      "sku": "1054",
+      "name": "ZYN NICOTINE POUCHES",
+      "slug": "zyn-nicotine-pouches",
+      "category": "CIGARETTES",
+      "type": "",
+      "thc": "",
+      "mg": "",
+      "price": "$10",
+      "image": "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/Zyn-Nicotine-pouches.webp",
+      "promoImage": null
+    }
+  ]
+}
