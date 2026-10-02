@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FlowerCard from "../components/FlowerCard";
@@ -11,6 +12,7 @@ import {
   TIER_CONFIG,
 } from "../lib/products";
 import { TIER_SEO } from "../lib/tierSeoContent";
+import { getTierGuideLinks } from "../lib/guideRegistry";
 import styles from "./tier.module.css";
 
 /* -- Generate all tier pages at build -- */
@@ -59,6 +61,7 @@ export default async function TierPage({
   const flowers = getFlowersByTier(tierInfo.key);
   const { config } = tierInfo;
   const seo = TIER_SEO[tierInfo.key];
+  const guideLinks = getTierGuideLinks(`/${tierSlug}`);
 
   const saleFlowers = flowers.filter((f) => f.isSale);
   const regularFlowers = flowers.filter((f) => !f.isSale);
@@ -144,6 +147,13 @@ export default async function TierPage({
           </div>
         </div>
       </section>
+
+      {guideLinks.length > 0 && (
+        <section className="guideStrip" aria-labelledby="tier-guide-heading">
+          <h2 id="tier-guide-heading">Flower name guides</h2>
+          <div className="guideLinks">{guideLinks.map((guide) => <Link key={guide.slug} href={`/guides/${guide.slug}`}>{guide.name}</Link>)}</div>
+        </section>
+      )}
 
       {/* ── Product grid ── */}
       <section className={styles.products}>
