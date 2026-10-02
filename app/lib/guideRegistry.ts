@@ -1,6 +1,7 @@
 import { allFlowers, allItems, type FlowerProduct, type ItemProduct } from "./products";
 
 export type GuideLane = "strain" | "native_cig" | "nic_vape" | "thc_vape";
+export const GUIDE_LANES: ReadonlyArray<{ lane: GuideLane; label: string }> = [{ lane: "strain", label: "Strains" }, { lane: "native_cig", label: "Native Cigarettes" }, { lane: "nic_vape", label: "Nicotine Vape" }, { lane: "thc_vape", label: "THC Vape" }];
 export type GuideEntry = { slug: string; lane: GuideLane; name: string; title: string; preferredCategoryPath: string; preferredProductSlug?: string; relatedSlugs: string[]; stockSource: "flowers.json" | "items.json" };
 type Seed = [string, GuideLane, string, string, string?];
 
@@ -40,6 +41,7 @@ const rows: Seed[] = [
 const titleFor = (name: string, lane: GuideLane) => `${name}${lane === "native_cig" ? " Native Cigarettes" : lane === "nic_vape" ? " Nicotine Vape" : lane === "thc_vape" ? " THC Vape" : ""} at Queensway Cannabis Dispensary | Queensway`;
 export const GUIDE_REGISTRY: GuideEntry[] = rows.map(([slug,lane,name,path,product]) => ({ slug, lane, name, title: titleFor(name,lane), preferredCategoryPath: path, preferredProductSlug: product, stockSource: lane === "strain" ? "flowers.json" : "items.json", relatedSlugs: rows.filter((r) => r[1] === lane && r[0] !== slug).slice(0, lane === "strain" ? 4 : 3).map((r) => r[0]) }));
 export const getGuide = (slug: string) => GUIDE_REGISTRY.find((guide) => guide.slug === slug);
+export const getGuidesByLane = () => GUIDE_LANES.map(({ lane, label }) => ({ lane, label, guides: GUIDE_REGISTRY.filter((guide) => guide.lane === lane) }));
 export function resolveGuideProduct(guide: GuideEntry): FlowerProduct | ItemProduct | undefined { const products = guide.lane === "strain" ? allFlowers : allItems; return products.find((product) => product.slug === guide.preferredProductSlug); }
 export const getTierGuideLinks = (path: string, limit = 6) => GUIDE_REGISTRY.filter((guide) => guide.lane === "strain" && guide.preferredCategoryPath === path).slice(0,limit);
 export function getCategoryGuideGroups(path: string) { if (path === "/items/cigarettes") return [{ label: "Native Cigarettes guides", guides: GUIDE_REGISTRY.filter((g) => g.lane === "native_cig") }]; if (path === "/items/vapes") return [{ label: "Nicotine Vape guides", guides: GUIDE_REGISTRY.filter((g) => g.lane === "nic_vape") }]; if (path === "/items/vape-disposables") return [{ label: "THC Vape guides", guides: GUIDE_REGISTRY.filter((g) => g.lane === "thc_vape") }]; return []; }

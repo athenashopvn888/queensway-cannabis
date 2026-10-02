@@ -10,6 +10,8 @@ const LINKS = [
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
   { href: "/blog", label: "Blog" },
+  { href: "/resources", label: "Resources" },
+  { href: "/guides", label: "Guides" },
 ];
 
 export default function Navbar() {
