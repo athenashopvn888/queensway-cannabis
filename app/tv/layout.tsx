@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TvReviewQr from "../TvReviewQr";
 
 export const metadata: Metadata = {
   title: "Queensway Cannabis In-Store Flower Display",
@@ -7,5 +8,10 @@ export const metadata: Metadata = {
 };
 
 export default function TvLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return children;
+  return (
+    <>
+      {children}
+      <TvReviewQr storeName="Queensway Cannabis Dispensary" />
+    </>
+  );
 }
