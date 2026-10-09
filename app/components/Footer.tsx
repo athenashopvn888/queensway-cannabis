@@ -34,6 +34,8 @@ export default function Footer() {
         <div className={styles.column}>
           <h2>Visit</h2>
           <Link href="/faq">FAQ</Link>
+          <Link href="/hours">Store Hours</Link>
+          <Link href="/visit">Visit &amp; Directions</Link>
           <Link href="/contact">Contact and directions</Link>
           <Link href="/blog">Blog</Link>
           <a href="tel:+14377829234">(437) 782-9234</a>
