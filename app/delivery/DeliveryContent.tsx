@@ -1,111 +1,17 @@
-"use client";
-
-import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Link from "next/link";
+import WebChat from "./WebChat";
 import styles from "./delivery.module.css";
-
-export default function DeliveryContent() {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!email.trim()) return;
-
-    setStatus("loading");
-
-    try {
-      // Save to Google Sheets via Apps Script
-      const res = await fetch(
-        `https://script.google.com/macros/s/AKfycbySrZYxI-NNnXfxY1jXOqHgT2HQi4zst2Fgte6FXTeymat_W_r0o1E3P83EfnVCjEk0/exec?action=delivery_email&email=${encodeURIComponent(email)}&store=QCD01`,
-        { method: "GET", mode: "no-cors" }
-      );
-      setStatus("success");
-      setEmail("");
-    } catch {
-      setStatus("success"); // no-cors always succeeds visually
-    }
-  }
-
-  return (
-    <main className={styles.main}>
-      <Navbar />
-      <div className={styles.content}>
-        <h1 className={styles.pageTitle}>
-          Delivery <span className={styles.highlight}>Coming Soon</span>
-        </h1>
-        <p className={styles.pageSubtitle}>
-          Queensway Cannabis Dispensary is launching delivery across Etobicoke.
-          Sign up below to be the first to know when we go live — and get an exclusive launch-day deal.
-        </p>
-
-        {/* Email signup */}
-        <div className={styles.formSection}>
-          <h2 className={styles.formTitle}>🔔 Get Notified When We Launch</h2>
-          <p className={styles.formDesc}>
-            Enter your email to join our delivery waitlist. We&apos;ll send you one email when delivery goes live.
-          </p>
-          <form onSubmit={handleSubmit}>
-            <div className={styles.inputRow}>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                className={styles.emailInput}
-                required
-                disabled={status === "loading"}
-              />
-              <button
-                type="submit"
-                className={styles.submitBtn}
-                disabled={status === "loading"}
-              >
-                {status === "loading" ? "Sending..." : "Notify Me"}
-              </button>
-            </div>
-          </form>
-          {status === "success" && (
-            <p className={styles.successMsg}>
-              ✅ You&apos;re on the list! We&apos;ll notify you when delivery launches.
-            </p>
-          )}
-          {status === "error" && (
-            <p className={styles.errorMsg}>
-              Something went wrong. Please try again.
-            </p>
-          )}
-        </div>
-
-        {/* Info cards */}
-        <div className={styles.infoGrid}>
-          <div className={styles.infoCard}>
-            <span className={styles.infoIcon}>📦</span>
-            <h3 className={styles.infoTitle}>Delivery Details</h3>
-            <p className={styles.infoDesc}>Contact the store to confirm current delivery timing and availability.</p>
-          </div>
-          <div className={styles.infoCard}>
-            <span className={styles.infoIcon}>🌉</span>
-            <h3 className={styles.infoTitle}>Serving Etobicoke</h3>
-            <p className={styles.infoDesc}>Ask the store whether delivery is available for your address.</p>
-          </div>
-          <div className={styles.infoCard}>
-            <span className={styles.infoIcon}>💰</span>
-            <h3 className={styles.infoTitle}>Before You Order</h3>
-            <p className={styles.infoDesc}>Confirm delivery details with the store before placing your order.</p>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className={styles.ctaSection}>
-          <p className={styles.ctaText}>
-            Can&apos;t wait? Visit us in-store at <strong>1174 The Queensway, Etobicoke</strong> —
-            we are <strong>Open 24 Hours</strong>. Call <strong>(437) 782-9234</strong>.
-          </p>
-        </div>
-      </div>
-      <Footer />
-    </main>
-  );
-}
+type PriceOption={key?:string;label?:string;price?:number};type Product={publicProductId:string;name:string;tier?:string;category?:string;images?:string[];priceOptions?:PriceOption[]};
+const API="https://milestone-1-demo.vercel.app",TIERS=["Exotic","Premium","AAA+","AA","Budget"];
+async function getCatalog():Promise<Product[]>{try{const response=await fetch(`${API}/api/catalog?store=QCD01`,{cache:"no-store",signal:AbortSignal.timeout(20000)});if(!response.ok)return[];const payload=await response.json();return Array.isArray(payload.products)?payload.products:[]}catch{return[]}}
+function grams(label=""){const match=label.match(/(7|14|28)\s*g/i);return match?Number(match[1]):0}function tierRange(products:Product[],tier:string){const values=products.filter(item=>(item.tier||"").toLowerCase()===tier.toLowerCase()).flatMap(item=>(item.priceOptions||[]).map(option=>{const weight=grams(`${option.label||""} ${option.key||""}`);return weight&&Number(option.price)>0?Number(option.price)/weight:0})).filter(Boolean);return values.length?`From $${Math.min(...values).toFixed(2)} to $${Math.max(...values).toFixed(2)} a gram`:null}
+export default async function DeliveryContent(){const products=await getCatalog();return <main className={styles.main}><Navbar/><div className={styles.content}>
+<header className={styles.hero}><p className={styles.eyebrow}>QUEENSWAY DELIVERY</p><h1>Queensway Cannabis weed delivery</h1><p>Browse the delivery menu, then open LIVE ORDER to contact the Queensway dispatcher. The dispatcher confirms availability, address coverage and next steps.</p><div className={styles.actions}><a href="#delivery-menu">Browse delivery menu</a><span>Delivery prices apply.</span></div></header>
+<p className={styles.priceNotice}><strong>DELIVERY PRICES ONLY.</strong> Delivery orders are charged these prices, not in-store prices. <Link href="/faq#delivery-price-rule">See the FAQ</Link></p>
+<section className={styles.rules}><div><strong>$60 product minimum</strong><span>Before the delivery fee</span></div><div><strong>$10 delivery fee</strong><span>Confirmed by the dispatcher</span></div><div><strong>Adults 19+</strong><span>Government-issued photo ID required</span></div></section>
+<section className={styles.ranges}><h2>Delivery prices per gram</h2><div>{TIERS.map(tier=>{const range=tierRange(products,tier);return range?<article key={tier}><strong>{tier}</strong><span>{range}</span></article>:null})}</div></section>
+<section id="delivery-menu" className={styles.catalog}><p className={styles.eyebrow}>CURRENT DELIVERY MENU</p><h2>{products.length?`${products.length} products`:"Menu temporarily unavailable"}</h2>{products.length?<div className={styles.grid}>{products.map(product=><article key={product.publicProductId} className={styles.card}>{product.images?.[0]?<img src={product.images[0]} alt={`${product.name} cannabis flower`} width="360" height="260" loading="lazy"/>:<div className={styles.placeholder}>QC</div>}<small>{product.tier||product.category}</small><h3>{product.name}</h3><div>{(product.priceOptions||[]).map(option=><span key={`${option.key}-${option.label}`}>{option.label} <strong>${option.price}</strong></span>)}</div></article>)}</div>:<p>No substitute menu is shown when the delivery source is unavailable.</p>}</section>
+<section className={styles.faq}><h2>Delivery questions</h2><details><summary>Why are delivery prices different from in-store prices?</summary><p>Store and delivery are two separate menus. Delivery uses bulk pricing: larger packages, starting at 7 grams, with a minimum order, so the price is set for bigger orders brought to your door. In-store prices and deals, like Buy 2g Get 1g FREE, are for smaller amounts you pick up in person, and they don&apos;t apply to delivery. If you only want a small amount or want it right now, our store on The Queensway is the fastest way to get it.</p></details><details><summary>Can I get the store price on a delivery order?</summary><p>No. Delivery orders always use delivery prices, and store prices only apply to in-store purchases. See the answer above for why.</p></details></section>
+</div><WebChat/><Footer/></main>}

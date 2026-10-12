@@ -471,3 +471,9 @@ button { cursor: pointer; font-family: inherit; }
 }main:has(> [data-fleet-homepage-announcement]) { overflow-x: clip; }
 main:has(> [data-fleet-homepage-announcement]) > #main-nav { position: sticky; top: 0; }
 
+.chat-panel textarea { min-height:76px; padding:10px; resize:vertical; }
+.chat-transcript { display:grid; gap:8px; max-height:220px; margin-top:12px; overflow-y:auto; }
+.chat-transcript > div { display:grid; gap:2px; max-width:88%; padding:9px 11px; border-radius:12px; background:#eef4ef; }
+.chat-transcript > .outbound { justify-self:end; background:#d8f5e2; }
+.chat-transcript small { font-size:11px; opacity:.7; }
+
