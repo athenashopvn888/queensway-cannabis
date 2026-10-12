@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
+import FlowerBogoStrip from "./FlowerBogoStrip";
 
 const LINKS = [
   { href: "/", label: "Home" },
@@ -55,6 +56,8 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
+
+      {pathname !== "/" ? <FlowerBogoStrip /> : null}
 
       <div className={styles.mobileNav} aria-label="Mobile navigation">
         {LINKS.map((link) => (

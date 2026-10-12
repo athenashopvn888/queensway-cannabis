@@ -312,3 +312,8 @@
     gap: 12px;
   }
 }
+.asLowAsBanner { margin:0; font-size:clamp(18px,2.4vw,26px); font-weight:900; color:var(--tier-color,#1B4332); line-height:1.2; text-align:right; }
+.listAnchor { margin:0; font-size:14px; font-weight:700; opacity:.8; text-align:right; }
+.dealMeta { margin-top:4px; font-size:12px; font-weight:700; opacity:.8; line-height:1.35; }
+.tierRange { margin:6px 0 0; font-size:15px; font-weight:700; opacity:.9; }
+@media (max-width: 768px) { .asLowAsBanner, .listAnchor { text-align:left; } }
