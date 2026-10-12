@@ -237,7 +237,7 @@ export const CATEGORY_CONFIG: Record<string, CategoryInfo> = {
     ],
   },
   CIGARETTES: {
-    banner: "/banners/06_Cigarettes.webp",
+    banner: "/banners/2-pack-5-dollars-25-carton-cigarettes.webp",
     name: "Cigarettes", slug: "cigarettes", color: "#78716c", icon: "🏷️",
     seoTitle: "Native Cigarettes Etobicoke — Discount Tobacco at Queensway Cannabis Dispensary",
     seoIntro: "Discount native cigarettes at Queensway Cannabis Dispensary, Etobicoke. Premium and value brands at the best prices on Etobicoke St.",
