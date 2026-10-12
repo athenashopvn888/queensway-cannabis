@@ -1,17 +1,44 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Link from "next/link";
 import WebChat from "./WebChat";
+import DeliveryCatalog, { type Product, type StoreInfo } from "./DeliveryCatalog";
 import styles from "./delivery.module.css";
-type PriceOption={key?:string;label?:string;price?:number};type Product={publicProductId:string;name:string;tier?:string;category?:string;images?:string[];priceOptions?:PriceOption[]};
-const API="https://milestone-1-demo.vercel.app",TIERS=["Exotic","Premium","AAA+","AA","Budget"];
-async function getCatalog():Promise<Product[]>{try{const response=await fetch(`${API}/api/catalog?store=QCD01`,{cache:"no-store",signal:AbortSignal.timeout(20000)});if(!response.ok)return[];const payload=await response.json();return Array.isArray(payload.products)?payload.products:[]}catch{return[]}}
-function grams(label=""){const match=label.match(/(7|14|28)\s*g/i);return match?Number(match[1]):0}function tierRange(products:Product[],tier:string){const values=products.filter(item=>(item.tier||"").toLowerCase()===tier.toLowerCase()).flatMap(item=>(item.priceOptions||[]).map(option=>{const weight=grams(`${option.label||""} ${option.key||""}`);return weight&&Number(option.price)>0?Number(option.price)/weight:0})).filter(Boolean);return values.length?`From $${Math.min(...values).toFixed(2)} to $${Math.max(...values).toFixed(2)} a gram`:null}
-export default async function DeliveryContent(){const products=await getCatalog();const schema={"@context":"https://schema.org","@type":"Service",name:"Queensway Cannabis Dispensary Weed Delivery",serviceType:"Cannabis delivery",provider:{"@type":"Store",name:"Queensway Cannabis Dispensary",telephone:"+14377829234",url:"https://www.queenswaycannabisdispensary.com"},areaServed:"Etobicoke, Toronto"};return <main className={styles.main}><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/><Navbar/><div className={styles.content}>
-<header className={styles.hero}><p className={styles.eyebrow}>QUEENSWAY DELIVERY</p><h1>Queensway Cannabis Dispensary Weed Delivery</h1><p>Browse the delivery menu, then open LIVE ORDER to contact the Queensway dispatcher. The dispatcher confirms availability, address coverage and next steps.</p><div className={styles.actions}><a href="#delivery-menu">Browse delivery menu</a><span>Delivery prices apply.</span></div></header>
-<p className={styles.priceNotice}><strong>DELIVERY PRICES ONLY.</strong> Delivery orders are charged these prices. <strong>IN-STORE PRICES ONLY.</strong> Store prices and deals apply to in-store purchases. <Link href="/faq#delivery-price-rule">See the FAQ</Link></p>
-<section className={styles.rules}><div><strong>$60 product minimum</strong><span>Before the delivery fee</span></div><div><strong>$10 delivery fee</strong><span>Confirmed by the dispatcher</span></div><div><strong>Adults 19+</strong><span>Government-issued photo ID required</span></div></section>
-<section className={styles.ranges}><h2>Delivery prices per gram</h2><div>{TIERS.map(tier=>{const range=tierRange(products,tier);return range?<article key={tier}><strong>{tier}</strong><span>{range}</span></article>:null})}</div></section>
-<section id="delivery-menu" className={styles.catalog}><p className={styles.eyebrow}>CURRENT DELIVERY MENU</p><h2>{products.length?`${products.length} products`:"Menu temporarily unavailable"}</h2>{products.length?<div className={styles.grid}>{products.map(product=><article key={product.publicProductId} className={styles.card}>{product.images?.[0]?<img src={product.images[0]} alt={`${product.name} cannabis flower`} width="360" height="260" loading="lazy"/>:<div className={styles.placeholder}>QC</div>}<small>{product.tier||product.category}</small><h3>{product.name}</h3><div>{(product.priceOptions||[]).map(option=><span key={`${option.key}-${option.label}`}>{option.label} <strong>${option.price}</strong></span>)}</div></article>)}</div>:<p>No substitute menu is shown when the delivery source is unavailable.</p>}</section>
-<section className={styles.faq}><h2>Delivery questions</h2><details><summary>Why are delivery prices different from in-store prices?</summary><p>Store and delivery are two separate menus. Delivery uses bulk pricing: larger packages, starting at 7 grams, with a minimum order, so the price is set for bigger orders brought to your door. In-store prices and deals, like Buy 2g Get 1g FREE, are for smaller amounts you pick up in person, and they don&apos;t apply to delivery. If you only want a small amount or want it right now, our store on The Queensway is the fastest way to get it.</p></details><details><summary>Can I get the store price on a delivery order?</summary><p>No. Delivery orders always use delivery prices, and store prices only apply to in-store purchases. See the answer above for why.</p></details></section>
-</div><WebChat/><Footer/></main>}
+
+const API = "https://milestone-1-demo.vercel.app";
+const SITE = "https://www.queenswaycannabisdispensary.com";
+const STORE: StoreInfo = {"name": "Queensway Cannabis Dispensary", "shortName": "Queensway", "eyebrow": "QUEENSWAY CANNABIS DISPENSARY \u00b7 ETOBICOKE", "area": "Etobicoke, Toronto", "address": "1174 The Queensway, Etobicoke", "phone": "(437) 782-9234", "phoneHref": "tel:+14377829234", "storeHours": "24 hours a day", "sodCode": "QCD01"};
+const FAQS = [
+  { id: "delivery-minimum", q: "What is the delivery minimum and fee?", a: "Delivery has a $60 product minimum before the $10 delivery fee. Delivery starts at 7g." },
+  { id: "delivery-how", q: "How do I order?", a: "Browse the delivery menu, open LIVE ORDER and send the dispatcher your choices. New customers complete a private ID check in chat, then the dispatcher confirms stock, your address and the total." },
+  { id: "delivery-id", q: "Do I need ID?", a: "Yes. Photo ID showing you are 19+ is checked at the door." },
+  { id: "delivery-price-rule", q: "Why are delivery prices different from in-store prices?", a: "Store and delivery are two separate menus. Delivery uses bulk pricing: larger packages, starting at 7 grams, with a minimum order, so the price per gram is set for bigger orders brought to your door. In-store prices and deals, like Buy 2g Get 1g FREE, are for smaller amounts you pick up in person, and they don't apply to delivery. If you only want a small amount or want it right now, our store on The Queensway is the fastest way to get it." },
+  { id: "store-price-on-delivery", q: "Can I get the store price on a delivery order?", a: "No. Delivery orders always use delivery prices, and store prices only apply to in-store purchases. See the answer above for why." },
+];
+
+async function getCatalog(): Promise<Product[]> {
+  try {
+    const response = await fetch(`${API}/api/catalog?store=QCD01`, { cache: "no-store", signal: AbortSignal.timeout(20000) });
+    if (!response.ok) return [];
+    const payload = await response.json();
+    return Array.isArray(payload.products) ? payload.products.filter((item: Product) => item.publicProductId && item.tier && Array.isArray(item.images) && Array.isArray(item.priceOptions)) : [];
+  } catch {
+    return [];
+  }
+}
+
+export default async function DeliveryContent() {
+  const products = await getCatalog();
+  const schema = [
+    { "@context": "https://schema.org", "@type": "Service", name: "Queensway Cannabis Dispensary Weed Delivery", serviceType: "Cannabis delivery", provider: { "@type": "Store", name: "Queensway Cannabis Dispensary", telephone: "+14377829234", url: SITE }, areaServed: "Etobicoke, Toronto" },
+    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQS.map((item) => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })) },
+  ];
+  return (
+    <main className={styles.main}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }} />
+      <Navbar />
+      <DeliveryCatalog products={products} store={STORE} faqs={FAQS} />
+      <WebChat />
+      <Footer />
+    </main>
+  );
+}
