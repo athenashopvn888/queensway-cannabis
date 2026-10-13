@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
+import CategoryCoreBanners from "../../components/CategoryCoreBanners";
 import Footer from "../../components/Footer";
 import SafeImage from "../../components/SafeImage";
 import {
@@ -65,6 +66,7 @@ export default async function ItemsCategoryPage({
     items = [...items, ...uniqueAccessories];
   }
   const { config } = catInfo;
+  const coreKind = catSlug === "cigarettes" ? "cigarettes" : (catSlug === "vapes" || catSlug === "vape-disposables") ? "vapes" : null;
   const guideGroups = getCategoryGuideGroups(`/items/${catSlug}`);
 
   // Check if banner file exists in the public folder
@@ -75,10 +77,11 @@ export default async function ItemsCategoryPage({
   return (
     <main className={styles.main}>
       <Navbar />
+      {coreKind && <CategoryCoreBanners kind={coreKind} storeName="Queensway Cannabis Dispensary" weedHref="/exotic-weed" vapeHref="/items/vapes" cigaretteHref="/items/cigarettes" />}
 
       {/* Hero Banner */}
       <section style={{ width: "100%", overflow: "hidden", marginTop: "92px", marginBottom: "24px" }}>
-        {config.banner && bannerExists && (
+        {config.banner && bannerExists && !coreKind && (
           <img
             src={config.banner}
             alt={config.name}
