@@ -250,14 +250,12 @@ h1, h2 { text-transform: uppercase; letter-spacing: -0.035em; font-weight: 900; 
 .hero__open.is-closed { color: rgba(255, 255, 255, 0.75); border-color: rgba(255, 255, 255, 0.25); }
 .hero__open.is-closed .dot { background: rgb(154, 154, 154); }
 .hero h1 { color: rgb(255, 255, 255); font-size: clamp(3.1rem, 12.5vw, 8.2rem); line-height: 0.85; margin: 1.3rem 0px 0.2rem; letter-spacing: -0.045em; }
-.hero .qcd-hero-title { color: rgb(255, 255, 255); font-size: clamp(3.1rem, 12.5vw, 8.2rem); line-height: 0.85; margin: 1.3rem 0px 0.2rem; letter-spacing: -0.045em; font-weight: 700; }
 .hero h1 .accent { color: transparent; -webkit-text-stroke: .024em var(--green-400); }
-.hero .qcd-hero-title .accent { color: transparent; -webkit-text-stroke: .024em var(--green-400); }
 @supports not (-webkit-text-stroke: 1px #000) {
-  .hero h1 .accent, .hero .qcd-hero-title .accent { color: var(--green-400); }
+  .hero h1 .accent { color: var(--green-400); }
 }
 @media (max-width: 639.98px) {
-  .hero h1 .accent, .hero .qcd-hero-title .accent { color: var(--green-400); -webkit-text-stroke: 0px; }
+  .hero h1 .accent { color: var(--green-400); -webkit-text-stroke: 0px; }
 }
 .hero__lead { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.08rem, 2.3vw, 1.32rem); color: rgba(255, 255, 255, 0.78); max-width: 540px; margin-top: 1.2rem; line-height: 1.45; letter-spacing: 0.002em; }
 .hero__meta { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin: 1.9rem 0px; }
