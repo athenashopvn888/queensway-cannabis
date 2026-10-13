@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Navbar from "./components/Navbar";
+import FourCoreBannerStack from "./components/FourCoreBannerStack";
 import Footer from "./components/Footer";
 import FlowerCard from "./components/FlowerCard";
 import { useLiveFlowers } from "./lib/useLiveMenu";
@@ -203,10 +204,7 @@ export default function HomePage() {
     <main className={styles.main}>
       {/* ── NAVBAR ── */}
       <Navbar />
-      <Link href="/items/cigarettes" data-belmont-mix-match-banner="" aria-label="BELMONT KING SIZE $10 - 2PACK BB $5 MIX & MATCH">
-        <span data-belmont-offer-lead="">BELMONT KING SIZE $10 -</span>
-        <span data-belmont-offer-tail=""> 2PACK BB $5 MIX &amp; MATCH</span>
-      </Link>
+      <FourCoreBannerStack title="QUEENSWAY CANNABIS DISPENSARY" storeName="Queensway Cannabis Dispensary" storeArea="Etobicoke" storeOrigin="https://queenswaycannabisdispensary.com" weedHref="/exotic-weed" vapeHref="/items/vapes" cigaretteHref="/items/cigarettes" />
 
       {/* ── WELCOME BANNER ── */}
       {hasWelcomeBanner && !welcomeBannerError && (
@@ -232,7 +230,7 @@ export default function HomePage() {
           {/* Brand branding */}
           <div className={styles.brandBlock}>
             <img src="/storeFavicon.webp" alt="Queensway Cannabis Dispensary Icon" style={{ height: "60px", width: "60px", objectFit: "contain", borderRadius: "8px", marginBottom: "8px" }} />
-            <h1 className={styles.brandTitle}>QUEENSWAY CANNABIS DISPENSARY</h1>
+            <div className={styles.brandTitle}>QUEENSWAY CANNABIS DISPENSARY</div>
             <p className={styles.brandSub}>Premium Cannabis Dispensary</p>
             <div className={styles.brandBadge}>Open 24 Hours</div>
           </div>
