@@ -4,7 +4,6 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
-import CategoryCoreBanners from "../components/CategoryCoreBanners";
 import Footer from "../components/Footer";
 import FlowerCard from "../components/FlowerCard";
 import {
@@ -64,7 +63,6 @@ export default async function TierPage({
 
   const flowers = (await liveFlowersByTier(tierInfo.key));
   const { config } = tierInfo;
-  const isCoreWeedTier = ["exotic-weed", "premium-weed", "aaa-weed"].includes(tierSlug);
   const seo = TIER_SEO[tierInfo.key];
   const guideLinks = getTierGuideLinks(`/${tierSlug}`);
 
@@ -80,7 +78,6 @@ export default async function TierPage({
   return (
     <main className={styles.main}>
       <Navbar />
-      {isCoreWeedTier && <CategoryCoreBanners kind="weed" storeName="Queensway Cannabis Dispensary" weedHref="/exotic-weed" vapeHref="/items/vapes" cigaretteHref="/items/cigarettes" />}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -100,7 +97,7 @@ export default async function TierPage({
       />
 
       {/* ── Banner Image (standalone, no overlay text) ── */}
-      {bannerExists && !isCoreWeedTier && (
+      {bannerExists && (
         <section className={styles.bannerSection}>
           <img
             src={config.banner}
