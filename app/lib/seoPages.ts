@@ -87,7 +87,7 @@ export const SEO_PAGES: SeoPageData[] = [
     ],
     faqs: [
       { q: "What is the cheapest weed at Queensway Cannabis Dispensary?", a: "Our Budget tier starts at $3/g with value ounces from $40. These are quality, properly-cured strains at Etobicoke's most competitive prices." },
-      { q: "Do you have ounce deals?", a: "Yes! Budget ounces from $40, AA ounces from $90, AAA+ ounces from $100. All with excellent quality, freshness guaranteed, and 3g bundle pricing on top." },
+      { q: "Do you have ounce deals?", a: "Yes! Budget ounces from $40, AA ounces from $90, AAA+ ounces from $100. Check the AA, AAA+ and Budget tier pages for what is on the shelf today, and ask the counter about Buy 2g Get 1g FREE on Exotic, Premium and AAA+." },
       { q: "Is cheap weed still good quality?", a: "Absolutely. Our Budget flower delivers THC 24-27% from trusted Canadian growers. We never sell old, dry, or improperly stored flower. Every product meets our quality standards regardless of price point." },
       { q: "Where can I buy cheap weed in Etobicoke?", a: "Queensway Cannabis Dispensary at 1174 The Queensway, Etobicoke. We are open 24 hours a day, 7 days a week, walk in anytime, no appointment needed. We're in the heart of 1174 The Queensway & Nearby Expressway area." },
       { q: "What bundle pricing do you offer?", a: "Every tier includes 3g bundle pricing (3g total). Our Exotic, Premium, and AAA+ tiers also offer 6g bundle pricing (6g total). These bundle offers apply on every visit." },
