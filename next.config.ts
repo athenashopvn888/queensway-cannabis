@@ -23,6 +23,7 @@ const cigaretteRedirects = SHOW_CIGARETTES ? [] : [
   { source: "/guides/rolled-gold", destination: "/items/vapes", statusCode: 302 as const },
   { source: "/guides/time-cigarettes", destination: "/items/vapes", statusCode: 302 as const },
   { source: "/guides/grabba", destination: "/items/vapes", statusCode: 302 as const },
+  { source: "/item/:slug(.*grabba.*)", destination: "/items/vapes", statusCode: 302 as const },
 ];
 
 import type { NextConfig } from "next";
@@ -38,7 +39,10 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        { source: "/", destination: "/takeover/index.html" },
+        {
+          source: "/",
+          destination: SHOW_CIGARETTES ? "/takeover/index.html" : "/takeover/index-nocig.html",
+        },
       ],
     };
   },
