@@ -1,3 +1,4 @@
+import { SHOW_CIGARETTES } from "../lib/siteConfig";
 import Link from "next/link";
 
 type CategoryCoreBannersProps = {
@@ -23,6 +24,7 @@ function Promo({ banner, href, alt, caption }: { banner: string; href: string; a
   );
 }
 export default function CategoryCoreBanners({ kind, storeName, weedHref, vapeHref, cigaretteHref }: CategoryCoreBannersProps) {
+  if (kind === "cigarettes" && !SHOW_CIGARETTES) return null;
   return (
     <section data-category-core-promos={kind} aria-label={`${storeName} ${kind} promotions`} style={{ width: "100%", maxWidth: "100%", overflowX: "hidden", marginBottom: "24px" }}>
       {kind === "weed" ? <Promo banner="/banners/core-top-weed-tier.webp" href={weedHref} alt={`${storeName} top three weed tiers`} caption="Top 3 tiers only (Exotic, Premium, AAA+): Buy 2g Get 1g FREE · Buy 3g Get 3g FREE (6g)" /> : null}
