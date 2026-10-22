@@ -41,7 +41,7 @@ const nextConfig: NextConfig = {
       beforeFiles: [
         {
           source: "/",
-          destination: SHOW_CIGARETTES ? "/takeover/index.html" : "/takeover/index-nocig.html",
+          destination: SHOW_CIGARETTES ? "/api/home-takeover?file=index.html" : "/api/home-takeover?file=index-nocig.html",
         },
       ],
     };

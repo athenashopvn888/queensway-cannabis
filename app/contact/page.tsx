@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styles from "./contact.module.css";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Contact Us — Queensway Cannabis Dispensary | 1174 The Queensway, Etobicoke",
   description:
