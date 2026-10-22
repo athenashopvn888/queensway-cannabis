@@ -7,7 +7,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
 import Navbar from "./components/Navbar";
+import FleetAnnouncementBanner from "./components/FleetAnnouncementBanner";
 import FourCoreBannerStack from "./components/FourCoreBannerStack";
+import { useFleetBanners } from "./components/FleetBannerBridge";
 import Footer from "./components/Footer";
 import FlowerCard from "./components/FlowerCard";
 import { useLiveFlowers } from "./lib/useLiveMenu";
@@ -103,6 +105,7 @@ interface ReviewStats {
 
 export default function HomePage() {
     const __liveFlowers = useLiveFlowers();
+  const sheetBanners = useFleetBanners();
   const [featuredStrains, setFeaturedStrains] = useState<any[]>([]);
   const [reviews, setReviews] = useState<Review[]>([]);
   const [reviewsStats, setReviewsStats] = useState<ReviewStats | null>(null);
@@ -207,7 +210,11 @@ export default function HomePage() {
     <main className={styles.main}>
       {/* ── NAVBAR ── */}
       <Navbar />
-      <FourCoreBannerStack title="QUEENSWAY CANNABIS DISPENSARY" storeName="Queensway Cannabis Dispensary" storeArea="Etobicoke" storeOrigin="https://queenswaycannabisdispensary.com" weedHref="/exotic-weed" vapeHref="/items/vapes" cigaretteHref="/items/cigarettes" />
+      {sheetBanners && sheetBanners.length > 0 ? (
+        <FleetAnnouncementBanner banners={sheetBanners} />
+      ) : (
+        <FourCoreBannerStack title="QUEENSWAY CANNABIS DISPENSARY" storeName="Queensway Cannabis Dispensary" storeArea="Etobicoke" storeOrigin="https://queenswaycannabisdispensary.com" weedHref="/exotic-weed" vapeHref="/items/vapes" cigaretteHref="/items/cigarettes" />
+      )}
 
       {/* ── WELCOME BANNER ── */}
       {hasWelcomeBanner && !welcomeBannerError && (

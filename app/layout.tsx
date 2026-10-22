@@ -1,8 +1,14 @@
+import FleetBannerBridge from "./components/FleetBannerBridge";
+import FleetContentProvider from "./components/FleetContentProvider";
 import { cigaretteSafeContent } from "./lib/siteConfig";
+import { CODED_BANNERS } from "./lib/fleet/config";
+import { getFleetContent } from "./lib/fleetContent";
 import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = cigaretteSafeContent({
+export const revalidate = 300;
+
+const ROOT_METADATA: Metadata = cigaretteSafeContent({
   metadataBase: new URL("https://www.queenswaycannabisdispensary.com"),
   title: {
     default: "Queensway Cannabis Dispensary | Etobicoke Dispensary",
@@ -68,6 +74,19 @@ export const metadata: Metadata = cigaretteSafeContent({
   },
 });
 
+export async function generateMetadata(): Promise<Metadata> {
+  const fleet = await getFleetContent();
+  if (!fleet.active) return ROOT_METADATA;
+  const description = fleet.pages.Home?.metaDescription?.trim() || "";
+  if (!description || description === ROOT_METADATA.description) return ROOT_METADATA;
+  return {
+    ...ROOT_METADATA,
+    description,
+    openGraph: { ...ROOT_METADATA.openGraph, description },
+    twitter: { ...ROOT_METADATA.twitter, description },
+  };
+}
+
 /* ── JSON-LD Structured Data ── */
 const jsonLd = {
   "@context": "https://schema.org",
@@ -120,14 +139,41 @@ const jsonLd = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const fleet = await getFleetContent();
+  const structured = cigaretteSafeContent(jsonLd);
+  const storeJsonLd = !fleet.active
+    ? structured
+    : {
+        ...structured,
+        name: fleet.nap.schemaName,
+        telephone: fleet.nap.phoneTel,
+        url: fleet.nap.website,
+        hasMap: fleet.nap.mapsSearchUrl,
+        address: {
+          ...structured.address,
+          streetAddress: fleet.nap.street,
+          addressLocality: fleet.nap.city,
+          addressRegion: fleet.nap.province,
+          postalCode: fleet.nap.postalCode,
+        },
+        geo: {
+          ...structured.geo,
+          latitude: Number(fleet.nap.lat),
+          longitude: Number(fleet.nap.lng),
+        },
+      };
+  const contentBanners = fleet.active && fleet.banners.some((banner, index) => banner !== CODED_BANNERS[index])
+    ? fleet.banners
+    : undefined;
   return (
     <html lang="en">
       <head>
+        <meta name="fleet-content-version" content={fleet.version} />
         <meta name="geo.region" content="CA-ON" />
         <meta name="geo.placename" content="Etobicoke" />
         <meta name="geo.position" content="43.6223417;-79.5217307" />
@@ -140,7 +186,7 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(cigaretteSafeContent(jsonLd)) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(storeJsonLd) }}
         />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-97B4MDE512"></script>
         <script
@@ -155,7 +201,11 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {children}
+        <FleetContentProvider value={{ active: fleet.active, version: fleet.version, nap: fleet.nap }}>
+          <FleetBannerBridge banners={contentBanners}>
+            {children}
+          </FleetBannerBridge>
+        </FleetContentProvider>
       </body>
     </html>
   );
