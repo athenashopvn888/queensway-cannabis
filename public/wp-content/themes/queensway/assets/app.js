@@ -197,13 +197,32 @@
     return opts;
   }
 
+  /* Mobile-bar Hours control. Same America/Toronto clock and QCD_HOURS
+     window as storeState, with the three bar labels: 24h, open-until, closed. */
+  function barHoursLabel() {
+    if (OPEN_24_HOURS) return "Open 24 hours";
+    var mins = torontoMinutes();
+    if (mins >= OPEN_MIN && mins < CLOSE_MIN) return "Open now · until " + formatHour(CLOSE_MIN);
+    return "Closed · opens " + formatHour(OPEN_MIN);
+  }
+  function paintBarHours() {
+    var label = barHoursLabel();
+    var mins = torontoMinutes();
+    var open = OPEN_24_HOURS || (mins >= OPEN_MIN && mins < CLOSE_MIN);
+    document.querySelectorAll("[data-hours-status]").forEach(function (el) { el.textContent = label; });
+    document.querySelectorAll("[data-hours-state]").forEach(function (el) {
+      el.classList.toggle("is-closed", !open);
+      if (el.tagName === "A" || el.tagName === "BUTTON") el.setAttribute("aria-label", "Hours, " + label);
+    });
+  }
   function paintOpenState() {
     var st = storeState();
     document.querySelectorAll("[data-open-label]").forEach(function (el) { el.textContent = st.label; });
     document.querySelectorAll("[data-open-state]").forEach(function (el) { el.classList.toggle("is-closed", !st.open); });
+    paintBarHours();
   }
   function initOpenState() {
-    if (!document.querySelector("[data-open-label]")) return;
+    if (!document.querySelector("[data-open-label], [data-hours-status]")) return;
     paintOpenState();
     setInterval(paintOpenState, 60000);
   }
