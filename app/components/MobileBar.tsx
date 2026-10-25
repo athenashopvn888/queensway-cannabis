@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { CODED_NAP } from "../lib/fleet/config";
 import { QCD_HOURS, barHoursLabel, barHoursOpen, torontoMinutes } from "../lib/mobileBarHours";
-import styles from "./MobileBar.module.css";
+import "./MobileBar.css";
 
 const MAPS_HREF = CODED_NAP.mapsSearchUrl;
 
@@ -27,33 +27,34 @@ export default function MobileBar() {
   }, []);
 
   return (
-    <nav className={styles.bar} aria-label="Quick actions">
-      <Link href="/menu" className={styles.item}>
+    <nav className="mobilebar" aria-label="Quick actions">
+      <Link href="/menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <circle cx="11" cy="11" r="7" />
           <path d="m21 21-4.3-4.3" />
         </svg>
-        <span className={styles.name}>Menu</span>
+        <span className="mobilebar__name">Menu</span>
       </Link>
       <Link
         href="/hours"
-        className={status.open ? `${styles.item} ${styles.hours}` : `${styles.item} ${styles.hours} ${styles.closed}`}
+        className={status.open ? "mobilebar__hours" : "mobilebar__hours is-closed"}
+        data-hours-state=""
         aria-label={`Hours, ${status.label}`}
       >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="9" />
           <path d="M12 7v5l3 2" />
         </svg>
-        <span className={styles.name}>Hours</span>
-        <span className={styles.status} data-hours-status="">
+        <span className="mobilebar__name">Hours</span>
+        <span className="mobilebar__status" data-hours-status="">
           {status.label}
         </span>
       </Link>
-      <a className={`${styles.item} ${styles.accent}`} href={MAPS_HREF} target="_blank" rel="noopener noreferrer">
+      <a className="accent" href={MAPS_HREF} target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <polygon points="3 11 22 2 13 21 11 13 3 11" />
         </svg>
-        <span className={styles.name}>Directions</span>
+        <span className="mobilebar__name">Directions</span>
       </a>
     </nav>
   );
