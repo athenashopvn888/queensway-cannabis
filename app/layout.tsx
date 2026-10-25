@@ -1,5 +1,6 @@
 import FleetBannerBridge from "./components/FleetBannerBridge";
 import FleetContentProvider from "./components/FleetContentProvider";
+import MobileBar from "./components/MobileBar";
 import { cigaretteSafeContent } from "./lib/siteConfig";
 import { CODED_BANNERS } from "./lib/fleet/config";
 import { getFleetContent } from "./lib/fleetContent";
@@ -206,6 +207,7 @@ export default async function RootLayout({
             {children}
           </FleetBannerBridge>
         </FleetContentProvider>
+        <MobileBar />
       </body>
     </html>
   );

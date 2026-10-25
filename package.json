@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:hours": "node scripts/check-qcd-hours.mjs"
+    "test:hours": "node scripts/check-qcd-hours.mjs",
+    "test:mobile-bar": "node --experimental-strip-types --test tests/mobile-bar.test.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.4",
