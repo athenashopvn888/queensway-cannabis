@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { CODED_NAP } from "../lib/fleet/config";
 import { QCD_HOURS, barHoursLabel, barHoursOpen, torontoMinutes } from "../lib/mobileBarHours";
+import { showMobileBar } from "../lib/showMobileBar";
 import "./MobileBar.css";
 
 const MAPS_HREF = CODED_NAP.mapsSearchUrl;
@@ -17,6 +19,7 @@ function paint() {
 }
 
 export default function MobileBar() {
+  const pathname = usePathname();
   const [status, setStatus] = useState(paint);
 
   useEffect(() => {
@@ -25,6 +28,8 @@ export default function MobileBar() {
     const timer = setInterval(update, 60_000);
     return () => clearInterval(timer);
   }, []);
+
+  if (!showMobileBar(pathname)) return null;
 
   return (
     <nav className="mobilebar" aria-label="Quick actions">

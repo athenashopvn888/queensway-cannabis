@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { barHoursLabel, formatHour, QCD_HOURS, torontoMinutes } from "../app/lib/mobileBarHours.ts";
+import { showMobileBar } from "../app/lib/showMobileBar.ts";
 
 const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), "utf8");
 
@@ -57,6 +58,18 @@ test("root layout mounts the shared mobile bar", () => {
   assert.match(css, /#06230f/);
   assert.match(css, /@media \(min-width: 900px\)/);
   assert.match(css, /display:\s*none/);
+});
+
+test("in-store boards do not mount the mobile bar", () => {
+  const bar = read("app/components/MobileBar.tsx");
+  assert.match(bar, /usePathname\(\)/);
+  assert.match(bar, /if \(!showMobileBar\(pathname\)\) return null/);
+  for (const path of ["/tv", "/tv/", "/tv2", "/tv2/", "/tv/board", "/tv2/board"]) {
+    assert.equal(showMobileBar(path), false, path);
+  }
+  for (const path of ["/", "/menu", "/hours", "/contact", "/delivery", "/television", "/tv2extra", null, ""]) {
+    assert.equal(showMobileBar(path), true, String(path));
+  }
 });
 
 test("header Call link stays the small header action", () => {
