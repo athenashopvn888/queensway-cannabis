@@ -1,0 +1,92 @@
+/* Same sticky bar as the homepage takeover: Menu · Hours · Directions.
+   Store green is the theme signal (#1faa55 / #06230f), hidden from 900px up. */
+.bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 80;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 4px;
+  max-width: 100%;
+  overflow: hidden;
+  background: #0a0a0a;
+  border-top: 1px solid #262626;
+  padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 44px;
+  width: 100%;
+  margin: 0;
+  padding: 6px 4px;
+  gap: 2px;
+  border-radius: 4px;
+  color: #fff;
+  background: transparent;
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: break-word;
+  touch-action: manipulation;
+}
+
+.item:focus-visible {
+  outline: 3px solid #38c06e;
+  outline-offset: -3px;
+}
+
+.item svg {
+  flex: none;
+  width: 20px;
+  height: 20px;
+}
+
+.accent {
+  color: #06230f;
+  background: #1faa55;
+}
+
+.name {
+  display: block;
+  max-width: 100%;
+}
+
+.status {
+  display: block;
+  max-width: 100%;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  text-transform: none;
+}
+
+.closed .status {
+  color: #f0d78c;
+}
+
+@media (max-width: 899.98px) {
+  :global(body) {
+    padding-bottom: calc(108px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (min-width: 900px) {
+  .bar {
+    display: none;
+  }
+}
