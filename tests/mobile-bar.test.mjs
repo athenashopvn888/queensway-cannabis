@@ -37,15 +37,21 @@ test("torontoMinutes uses America/Toronto, including daylight time", () => {
 test("root layout mounts the shared mobile bar", () => {
   const layout = read("app/layout.tsx");
   const bar = read("app/components/MobileBar.tsx");
-  const css = read("app/components/MobileBar.module.css");
+  const css = read("app/components/MobileBar.css");
   assert.match(layout, /<MobileBar\s*\/>/);
   assert.match(bar, /href="\/menu"/);
   assert.match(bar, /href="\/hours"/);
   assert.match(bar, /mapsSearchUrl/);
   assert.match(bar, /aria-label="Quick actions"/);
+  assert.match(bar, /className="mobilebar"/);
+  assert.match(bar, /className="mobilebar__name"/);
+  assert.match(bar, /className="mobilebar__status"/);
+  assert.match(bar, /className="accent"/);
+  assert.doesNotMatch(bar, /styles\.hours/);
   assert.match(bar, /Menu/);
   assert.match(bar, /Hours/);
   assert.match(bar, /Directions/);
+  assert.match(css, /\.mobilebar\s*\{/);
   assert.match(css, /min-height:\s*44px/);
   assert.match(css, /#1faa55/);
   assert.match(css, /#06230f/);
