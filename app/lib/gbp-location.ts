@@ -29,7 +29,7 @@ export const gbpLocation = {
   latitude: "43.6223417",
   longitude: "-79.5217307",
   hours: ["Open 24 Hours"],
-  seoTitle: "Queensway Cannabis Dispensary | Weed Dispensary in Etobicoke",
+  seoTitle: "Queensway Cannabis Dispensary near me | Weed Dispensary in Etobicoke",
   metaDescription: "Queensway Cannabis Dispensary is a local weed dispensary in Etobicoke offering flower, pre-rolls, edibles, vapes, concentrates, CBD, and service for adults 19+.",
   localLandmarks: ["The Queensway", "Etobicoke", "Islington"],
   introVariant: "Welcome to Queensway Cannabis Dispensary, your premier weed dispensary in Etobicoke situated right on 1174 The Queensway. We are dedicated to providing adults 19+ with top-tier weed, premium cannabis flower, pre-rolls, edibles, THC vapes, concentrates, and CBD products. If you are looking for a trusted cannabis store near The Queensway / Etobicoke or a weed shop near Etobicoke, stop by today to consult with our knowledgeable staff.",
