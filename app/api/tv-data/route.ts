@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { allFlowers, allItems } from "../../lib/products";
 import { getTvData } from "../../lib/tvStock";
+import { isCigaretteScheduleActive } from "../../lib/cigaretteSchedule";
 
 export const runtime = "nodejs";
 
@@ -16,5 +17,10 @@ export async function GET(request: Request) {
     staticItems: allItems,
   });
 
-  return NextResponse.json(body, { headers });
+  const cigaretteOn = isCigaretteScheduleActive();
+  return NextResponse.json(body, { headers: {
+    ...headers,
+    "x-tv-data-cig-tv": cigaretteOn ? "1" : "0",
+    "x-tv-data-cig-web": cigaretteOn ? "1" : "0",
+  } });
 }

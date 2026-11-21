@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styles from "./menu.module.css";
+import { isCigaretteScheduleActive } from "../lib/cigaretteSchedule";
 
 // Products come from the same loader as /api/tv-data on every request.
 export const dynamic = "force-dynamic";
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 function __compute_categories() {
-  return [
+  const categories = [
   {
     name: "Weed Flower",
     detail: "Exotic to budget · five tiers",
@@ -75,7 +76,17 @@ function __compute_categories() {
     count: __menu.items.filter((item) => item.category === "ADD ONS").length,
     image: __menu.items.find((item) => item.category === "ADD ONS" && item.image)?.image,
   },
-];
+  ];
+  if (isCigaretteScheduleActive()) {
+    categories.push({
+      name: "Cigarettes",
+      detail: "Current tobacco listings for adults 19+",
+      href: "/items/cigarettes",
+      count: __menu.items.filter((item) => item.category === "CIGARETTES").length,
+      image: __menu.items.find((item) => item.category === "CIGARETTES" && item.image)?.image,
+    });
+  }
+  return categories;
 }
 let categories!: ReturnType<typeof __compute_categories>;
 
