@@ -1,4 +1,3 @@
-import { SHOW_CIGARETTES } from "../lib/siteConfig";
 export const TV2_DAYTIME_START_HOUR = 10;
 export const TV2_DAYTIME_END_HOUR = 17;
 export const TV2_TIME_ZONE = "America/Toronto";
@@ -22,15 +21,11 @@ const CIGARETTE_PROMOS_RAW = [
     alt: "Marlboro and Belmont $10 Pack Offer",
   },
 ] as const;
-export const CIGARETTE_PROMOS = SHOW_CIGARETTES ? CIGARETTE_PROMOS_RAW : [];
+export const CIGARETTE_PROMOS = CIGARETTE_PROMOS_RAW;
 
 export const TV2_DAYTIME_PROMOS: Readonly<
   Partial<Record<string, Tv2DaytimePromo>>
 > = {
-  CIGARETTES: {
-    src: "/banners/tv2-category-collage.png",
-    alt: "Edibles, concentrates, and pre-rolls collage",
-  },
   VAPES: {
     src: "https://pub-eb3e1fe18a43477eabc885cfb791d97c.r2.dev/products/cannabis_banner_mashup_variation_01_600x600.webp",
     fallbackSrc:
