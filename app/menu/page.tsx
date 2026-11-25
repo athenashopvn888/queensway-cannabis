@@ -4,17 +4,11 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import styles from "./menu.module.css";
-import { isCigaretteScheduleActive } from "../lib/cigaretteSchedule";
+import { getCigaretteSnapshot } from "../lib/cigaretteFeed";
 
 // Products come from the same loader as /api/tv-data on every request.
 export const dynamic = "force-dynamic";
 
-// ONE product loader (same as /api/tv-data), filled per request by __loadMenuData(). Grok 2026-10-09.
-let __menu!: Awaited<ReturnType<typeof getLiveMenu>>;
-async function __loadMenuData(): Promise<void> {
-  __menu = await getLiveMenu();
-  categories = __compute_categories();
-}
 
 export const metadata: Metadata = {
   title: "Cannabis Menu in Etobicoke",
@@ -25,73 +19,73 @@ export const metadata: Metadata = {
   },
 };
 
-function __compute_categories() {
+function menuCategories(menu: Awaited<ReturnType<typeof getLiveMenu>>, showCigarettes: boolean) {
   const categories = [
   {
     name: "Weed Flower",
     detail: "Exotic to budget · five tiers",
     href: "/exotic-weed",
-    count: __menu.flowers.length,
-    image: __menu.flowers.find((product) => product.image)?.image,
+    count: menu.flowers.length,
+    image: menu.flowers.find((product) => product.image)?.image,
   },
   {
     name: "Pre-Rolls",
     detail: "Singles, packs and infused",
     href: "/items/prerolls",
-    count: __menu.items.filter((item) => item.category === "PREROLLS").length,
-    image: __menu.items.find((item) => item.category === "PREROLLS" && item.image)?.image,
+    count: menu.items.filter((item) => item.category === "PREROLLS").length,
+    image: menu.items.find((item) => item.category === "PREROLLS" && item.image)?.image,
   },
   {
     name: "Concentrates",
     detail: "Hash, shatter and extracts",
     href: "/items/concentrates",
-    count: __menu.items.filter((item) => item.category === "CONCENTRATES").length,
-    image: __menu.items.find((item) => item.category === "CONCENTRATES" && item.image)?.image,
+    count: menu.items.filter((item) => item.category === "CONCENTRATES").length,
+    image: menu.items.find((item) => item.category === "CONCENTRATES" && item.image)?.image,
   },
   {
     name: "Edibles",
     detail: "Gummies, chocolate and drinks",
     href: "/items/edibles",
-    count: __menu.items.filter((item) => item.category === "EDIBLES").length,
-    image: __menu.items.find((item) => item.category === "EDIBLES" && item.image)?.image,
+    count: menu.items.filter((item) => item.category === "EDIBLES").length,
+    image: menu.items.find((item) => item.category === "EDIBLES" && item.image)?.image,
   },
   {
     name: "THC Vape",
     detail: "Cannabis vape products",
     href: "/items/vape-disposables",
-    count: __menu.items.filter((item) => item.category === "VAPE DISPOSABLE").length,
-    image: __menu.items.find((item) => item.category === "VAPE DISPOSABLE" && item.image)?.image,
+    count: menu.items.filter((item) => item.category === "VAPE DISPOSABLE").length,
+    image: menu.items.find((item) => item.category === "VAPE DISPOSABLE" && item.image)?.image,
   },
   {
     name: "Nicotine Vape",
     detail: "Nicotine products for adults 19+",
     href: "/items/vapes",
-    count: __menu.items.filter((item) => item.category === "VAPE PENS").length,
-    image: __menu.items.find((item) => item.category === "VAPE PENS" && item.image)?.image,
+    count: menu.items.filter((item) => item.category === "VAPE PENS").length,
+    image: menu.items.find((item) => item.category === "VAPE PENS" && item.image)?.image,
   },
   {
     name: "Accessories",
     detail: "Add-ons and essentials",
     href: "/items/add-ons",
-    count: __menu.items.filter((item) => item.category === "ADD ONS").length,
-    image: __menu.items.find((item) => item.category === "ADD ONS" && item.image)?.image,
+    count: menu.items.filter((item) => item.category === "ADD ONS").length,
+    image: menu.items.find((item) => item.category === "ADD ONS" && item.image)?.image,
   },
   ];
-  if (isCigaretteScheduleActive()) {
+  if (showCigarettes) {
     categories.push({
       name: "Cigarettes",
       detail: "Current tobacco listings for adults 19+",
       href: "/items/cigarettes",
-      count: __menu.items.filter((item) => item.category === "CIGARETTES").length,
-      image: __menu.items.find((item) => item.category === "CIGARETTES" && item.image)?.image,
+      count: menu.items.filter((item) => item.category === "CIGARETTES").length,
+      image: menu.items.find((item) => item.category === "CIGARETTES" && item.image)?.image,
     });
   }
   return categories;
 }
-let categories!: ReturnType<typeof __compute_categories>;
 
 export default async function MenuPage() {
-    await __loadMenuData();
+  const [menu, cigarettes] = await Promise.all([getLiveMenu(), getCigaretteSnapshot()]);
+  const categories = menuCategories(menu, cigarettes.web.show);
   return (
     <main className={styles.page}>
       <Navbar />

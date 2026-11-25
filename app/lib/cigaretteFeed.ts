@@ -1,22 +1,22 @@
 import { cache } from "react";
 import { SHOW_CIGARETTES } from "./siteConfig";
+import { resolveAppsScriptUrl, TV_STORE } from "./tvStock";
 
-export type CigaretteSurface = { show: boolean };
+const OFF = { web: { show: false }, tv: { show: false }, guides: { show: false } };
 
-export type CigaretteSnapshot = {
-  web: CigaretteSurface;
-  tv: CigaretteSurface;
-  guides: CigaretteSurface;
-};
-
-/**
- * Queensway's coded cigarette switch is NEXT_PUBLIC_SHOW_CIGARETTES.
- * There is no separate feed. A missing feed stays on that coded flag.
- * Route behaviour stays in next.config (redirects when the switch is off).
- */
-export async function readCigaretteFeed(): Promise<CigaretteSnapshot> {
-  const show = SHOW_CIGARETTES;
-  return { web: { show }, tv: { show }, guides: { show } };
+export async function readCigaretteFeed() {
+  try {
+    const url = new URL(resolveAppsScriptUrl());
+    url.searchParams.set("store", TV_STORE);
+    const response = await fetch(url, { cache: "no-store", signal: AbortSignal.timeout(8000) });
+    if (!response.ok) return OFF;
+    const { cig } = await response.json();
+    if (cig?.source !== TV_STORE && cig?.source !== "ALL") return OFF;
+    const web = SHOW_CIGARETTES && cig.webOn === true;
+    return { web: { show: web }, tv: { show: cig.tvOn === true }, guides: { show: web } };
+  } catch {
+    return OFF;
+  }
 }
 
 export const getCigaretteSnapshot = cache(readCigaretteFeed);

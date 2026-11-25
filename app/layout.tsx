@@ -7,7 +7,10 @@ import { getFleetContent } from "./lib/fleetContent";
 import type { Metadata } from "next";
 import "./globals.css";
 
-export const revalidate = 300;
+import CigaretteStateProvider from "./components/CigaretteStateProvider";
+import { getCigaretteSnapshot } from "./lib/cigaretteFeed";
+
+export const dynamic = "force-dynamic";
 
 const ROOT_METADATA: Metadata = cigaretteSafeContent({
   metadataBase: new URL("https://www.queenswaycannabisdispensary.com"),
@@ -145,7 +148,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const fleet = await getFleetContent();
+  const [fleet, cigarettes] = await Promise.all([getFleetContent(), getCigaretteSnapshot()]);
   const structured = cigaretteSafeContent(jsonLd);
   const storeJsonLd = !fleet.active
     ? structured
@@ -203,9 +206,11 @@ export default async function RootLayout({
       </head>
       <body>
         <FleetContentProvider value={{ active: fleet.active, version: fleet.version, nap: fleet.nap }}>
-          <FleetBannerBridge banners={contentBanners}>
-            {children}
-          </FleetBannerBridge>
+          <CigaretteStateProvider value={{ web: cigarettes.web.show, tv: cigarettes.tv.show }}>
+            <FleetBannerBridge banners={contentBanners}>
+              {children}
+            </FleetBannerBridge>
+          </CigaretteStateProvider>
         </FleetContentProvider>
         <MobileBar />
       </body>

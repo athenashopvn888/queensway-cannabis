@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FLEET_COLORS } from "../../lib/fleet/config";
 import type { ResolvedBanner } from "../../lib/fleet/types";
-import { SHOW_CIGARETTES } from "../../lib/siteConfig";
+import { useCigaretteState } from "../CigaretteStateProvider";
 
 const figureStyle = { margin: 0, width: "100%" } as const;
 const imageStyle = { display: "block", width: "100%", maxWidth: "100%", height: "auto" } as const;
@@ -52,8 +52,9 @@ function BannerFigure({ banner }: { banner: ResolvedBanner }) {
 }
 
 export default function FleetAnnouncementBanner({ banners }: { banners?: ResolvedBanner[] } = {}) {
+  const showCigarettes = useCigaretteState().web;
   if (!banners) return null;
-  const visible = banners.filter((banner) => !banner.hidden && (SHOW_CIGARETTES || (banner.id !== "cigarettes" && banner.id !== "premium-cigarettes")));
+  const visible = banners.filter((banner) => !banner.hidden && (showCigarettes || (banner.id !== "cigarettes" && banner.id !== "premium-cigarettes")));
   if (visible.length === 0) return null;
   return (
     <aside data-fleet-homepage-announcement="" aria-label="Store announcements" style={{ display: "flex", flexDirection: "column", width: "100%", maxWidth: "100%", height: "auto", overflowX: "hidden", overflowY: "visible", position: "relative", zIndex: 50 }}>

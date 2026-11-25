@@ -15,7 +15,7 @@ import {
 import styles from "./items.module.css";
 import { getCategoryGuideGroups } from "../../lib/guideRegistry";
 import { liveItemsByCategory } from "../../lib/liveMenu";
-import { isCigaretteScheduleActive } from "../../lib/cigaretteSchedule";
+import { getCigaretteSnapshot } from "../../lib/cigaretteFeed";
 
 // Read the live menu feed on every request (never a build-time snapshot).
 export const dynamic = "force-dynamic";
@@ -57,7 +57,7 @@ export default async function ItemsCategoryPage({
   const { category: catSlug } = await params;
   const catInfo = getCategoryFromSlug(catSlug);
   if (!catInfo) notFound();
-  if (catInfo.key === "CIGARETTES" && !isCigaretteScheduleActive()) redirect("/items/vapes");
+  if (catInfo.key === "CIGARETTES" && !(await getCigaretteSnapshot()).web.show) redirect("/items/vapes");
 
   /* Pre-Rolls also shows accessories (ADD ONS) */
   let items = (await liveItemsByCategory(catInfo.key));
